@@ -1,6 +1,208 @@
-doctype html
-html(lang="ru-RU")
-    head
-        title page-title
-    body
-        p hello
+extends layout/main
+
+
+block title
+	title Grand Prix
+block pagecontent
+	+b.HEADER.header
+		+e.wrapper
+			+e.A.logo-link
+				+e.IMG.logo(src='logo.svg' width='102')
+			+b.NAV.main-nav
+				+e.BUTTON.toggle
+					span
+				+e.UL.list
+					+e.UL.item
+						+e.A.link почему мы
+					+e.UL.item
+						+e.A.link партнеры
+					+e.UL.item
+						+e.A.link команда
+					+e.UL.item
+						+e.A.link каталог
+					+e.UL.item
+						+e.A.link условия сотрудничества
+			+e.contacts
+				+e.A.tel(href='tel:88001234567') 8 800 123 45 67
+				+e.A.callback(href='#callback') Заказать обратный звонок
+	+b.SECTION.act
+		+e.wrapper.container
+			+e.H3.title Получите 1-ю партию корма для животных
+				|
+				span.select  супер-премиум класса
+				| российского производства на особых условиях
+			+e.UL.list
+				+e.item Маржинальность до 100%
+				+e.item Собственное производство в РФ
+				+e.item Бесплатная доставка от 1 дня
+				+e.item Для магазинов, питомников, <br> заводчиков, оптовиков
+			+b.form
+				+e.H4.title Заполните форму и получите
+					span.select  оптовый прайс-лист
+					| нашей продукции
+				form
+					+e.wrapper
+						+e.item
+							+e.LABEL.label
+							+e.INPUT.input(type='email' palceholder='Введите Ваш e-mail')
+						+e.item
+							+e.LABEL.label
+							+e.INPUT.input(type='email' palceholder='Введите Ваш e-mail')
+						+e.BUTTON.btn Получить прайс-
+						+e.P.agreement Нажимая на кнопку, Вы соглашаетесь с условиями политики конфиденциальности
+	+b.SECTION.advantages
+		+e.wrapper.container
+			+e.list
+				mixin item(namber, text)
+					+e.item
+						+e.number= namber
+						+e.P.text= text
+				+item("01", 'Мы производим сбалансированный полнорационный корм для собак и кошек, который не содержит в составе пшеницу, глютен, красители и ароматизаторы, которые могут вызывать аллергию у животных.')
+				+item('02', 'Наше производство полностью находится на территории РФ, что позволяет избежать перебоев поставок из-за санкций. Мы постоянно наращиваем объемы производства. У Вас всегда будет ассортимент на полках магазина.')
+				+item('03', 'Разработали уникальную упаковку, которая вызывает интерес у покупателей. Активно развиваем розничную торговлю и репутацию бренда с помощью современных инструментов маркетинга, продукт продает сам себя.')
+				+item('04', 'Производим продукт, у которого складывается репутация “супер-премиум”, при этом наша цена гораздо ниже конкурентов.')
+				+item('05', 'С нами зарабатывают уже 163 партнера по всей России. Присоединяйтесь и Вы.')
+				+item('06', 'Мы сотрудничаем с заводчиками и питомниками, предоставляем особые условия.')
+			+b.form--advantages
+				+e.H4.title Заполните форму и получите
+					span.select  оптовый прайс-лист
+					| нашей продукции
+				form
+					+e.wrapper
+						+e.item
+							+e.LABEL.label
+							+e.INPUT.input(type='email' palceholder='Введите Ваш e-mail')
+						+e.item
+							+e.LABEL.label
+							+e.INPUT.input(type='email' palceholder='Введите Ваш e-mail')
+						+e.BUTTON.btn Получить прайс-
+						+e.P.agreement Нажимая на кнопку, Вы соглашаетесь с условиями политики конфиденциальности
+	+b.SECTION.partners
+		+e.wrapper.container
+			+e.h2.title Наши основные
+				span.select  партнеры
+				| – это:
+			+e.list
+				mixin partnerItem(namber)
+					+e.item
+						+e.img(src='img/partners/partners' + namber alt='partners-' + namber )
+				-for (var i = 1; i < 11; i++)
+					+partnerItem(i, 'img')
+
+	+b.SECTION.test
+		+e.wrapper
+			+e.content
+				+e.h4.title Пройдите
+					span.select  простой тест
+					| и получите персональное предложение
+				+e.BUTTON.btn Пройти тест
+			+e.img-wrapper
+				+e.img(src="img/test-dog.png")
+
+	+e.SECTION.team
+		+e.wrapper
+			+e.H2.title
+				span.select  Люди
+				| , которые создают продукт GRAND PRIX
+			+b.team-gallery
+				mixin galleryItem(img, userName, post, pet)
+					+e.item
+						+e.img-wrapper
+							+e.img(src='img/team/team-' + img alt='team-' + img )
+						+e.H5.name= userName
+						+e.post= post
+						+e.pet= pet
+				+galleryItem('1', 'Анна Андрианова', 'Менеджер по работе с ключевыми клиентами', 'Питомец: Пес Бамси')
+				+galleryItem('2', 'Вячеслав Пономарев', 'Менеджер по продажам', 'Питомец: Кот Бонифаций')
+				+galleryItem('3', 'Павел Юшков', 'Менеджер по продажам', 'Питомец: Кошка Ося')
+
+	+e.SECTION.catalog
+		+e.wrapper
+			+e.head
+				+e.head-list
+					+e.head-item для кошек
+					+e.head-item для собак
+			+e.body
+				+e.body-item
+					+e.list
+						mixin catalogItem(img, title)
+							+e.item
+								+e.img-wrapper
+									+e.img(src='img/team/team-' + img alt='team-' + img )
+								+e.H5.title=  title
+								+e.A.more(href='#')  Подробнее
+								+e.BUTTON.btn Узнать цену
+					+catalogItem('1', 'GRAND PRIX KITTEN корм для котят с лососем 300 г')
+					+catalogItem('2', 'GRAND PRIX KITTEN корм для котят с лососем 1.5 кг')
+					+catalogItem('3', 'GRAND PRIX ORIGINAL корм для кошек с лососем 300 г')
+					+catalogItem('4', 'GRAND PRIX ORIGINAL корм для кошек с лососем 1.5 кг')
+					+catalogItem('5', 'GRAND PRIX STERILIZED корм для стерилизованных кошек с кроликом 300 г')
+					+catalogItem('6', 'GRAND PRIX STERILIZED корм для стерилизованных кошек с кроликом 1.5 кг')
+
+	+e.SECTION.reviews-partners
+		+e.wrapper
+			+e.H2.title
+				sapn.select Отзывы
+				| наших партнёров
+			+e.list
+				mixin reviewsPartnersItem(src)
+					+e.item
+						+e.IMG.img(src= src alt='reviews-' + src)
+				-for (var i = 1; i < 4; i++)
+					+reviewsPartnersItem(i)
+
+	+e.SECTION.reviews
+		+e.wrapper
+			+e.H2.title Что говорят
+				sapn.select  хозяева питомцев
+				|  о GRAND PRIX
+			+e.list
+				mixin reviewsItem(avatar, userName, post, text)
+					+e.item
+						+e.item-top
+							+e.avatar-wrapper
+								+e.IMG.avatar(src= avatar alt='reviews-' + avatar)
+							+e.name= 	userName
+							+e.post= 	post
+						p= 	text
+				-for (var i = 1; i < 4; i++)
+					+reviewsItem('1', 'Алина Алинова', 'генеральный директор компании AAA', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')
+
+	+b.SECTION.act
+		+e.wrapper.container
+			+e.H3.title Получите 1-ю партию корма для животных
+				|
+				span.select  супер-премиум класса
+				| российского производства на особых условиях
+			+e.UL.list
+				+e.item Маржинальность до 100%
+				+e.item Собственное производство в РФ
+				+e.item Бесплатная доставка от 1 дня
+				+e.item Для магазинов, питомников, <br> заводчиков, оптовиков
+			+b.form
+				+e.H4.title Заполните форму и получите
+					span.select  оптовый прайс-лист
+					| нашей продукции
+				form
+					+e.wrapper
+						+e.item
+							+e.LABEL.label
+							+e.INPUT.input(type='email' palceholder='Введите Ваш e-mail')
+						+e.item
+							+e.LABEL.label
+							+e.INPUT.input(type='email' palceholder='Введите Ваш e-mail')
+						+e.BUTTON.btn Получить прайс-
+						+e.P.agreement Нажимая на кнопку, Вы соглашаетесь с условиями политики конфиденциальности
+	+b.FOOTER.footer
+		+e.wrapper.container
+			+e.logo-wrapper
+				+e.IMG.logo(src='img/logo.svg')
+			+e.contacts
+				+e.A.phone(src='tel:88001234567') 8 800 123 45 67
+				+e.A.callback(href="#callback") Заказать обратный звонок
+
+
+
+
+
+

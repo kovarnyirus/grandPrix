@@ -75,7 +75,7 @@ gulp.task("copyJs", function () {
   ], {
     base: "source"
   })
-    .pipe(gulp.dest("build/js/"))
+    .pipe(gulp.dest("build/"))
 });
 
 gulp.task("copyFonts", function () {
@@ -84,7 +84,7 @@ gulp.task("copyFonts", function () {
   ], {
     base: "source"
   })
-    .pipe(gulp.dest("build/fonts"))
+    .pipe(gulp.dest("build/"))
 });
 
 gulp.task("watch", function () {

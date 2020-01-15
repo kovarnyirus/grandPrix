@@ -1,9 +1,385 @@
 <!DOCTYPE html>
-<html lang="ru-RU">
+<html lang="ru">
   <head>
-    <title>page-title</title>
+    <meta charset="utf-8">
+    <title>Grand Prix</title>
+    <meta name="description" content="о чем страница">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=750, shrink-to-fit=no">
+    <!--meta(property='og:image', content='path/to/image.jpg')-->
+    <!--link(rel='shortcut icon',   type="image/png",  href='img/favicon/favicon.png')-->
+    <!-- Custom Browsers Color-->
+    <meta name="theme-color" content="#b9a783">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <script defer type="text/javascript" src="js/main.js"></script>
   </head>
   <body>
-    <p>hello</p>
+    <header class="header">
+      <div class="header__wrapper"><a class="header__logo-link"><img class="header__logo" src="logo.svg" width="102" alt="" role="presentation"/></a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle"><span></span>
+          </button>
+          <ul class="main-nav__list"><li>
+            <ul class="main-nav__item"><li><a class="main-nav__link">почему мы</a></li>
+            </ul></li><li>
+            <ul class="main-nav__item"><li><a class="main-nav__link">партнеры</a></li>
+            </ul></li><li>
+            <ul class="main-nav__item"><li><a class="main-nav__link">команда</a></li>
+            </ul></li><li>
+            <ul class="main-nav__item"><li><a class="main-nav__link">каталог</a></li>
+            </ul></li><li>
+            <ul class="main-nav__item"><li><a class="main-nav__link">условия сотрудничества</a></li>
+            </ul></li>
+          </ul>
+        </nav>
+        <div class="header__contacts"><a class="header__tel" href="tel:88001234567">8 800 123 45 67</a><a class="header__callback" href="#callback">Заказать обратный звонок</a>
+        </div>
+      </div>
+    </header>
+    <section class="act">
+      <div class="act__wrapper container">
+        <h3 class="act__title">
+          Получите 1-ю партию корма для животных<span class="select"> супер-премиум класса</span>российского производства на особых условиях
+        </h3>
+        <ul class="act__list">
+          <li class="act__item">Маржинальность до 100%
+          </li>
+          <li class="act__item">Собственное производство в РФ
+          </li>
+          <li class="act__item">Бесплатная доставка от 1 дня
+          </li>
+          <li class="act__item">Для магазинов, питомников, <br> заводчиков, оптовиков
+          </li>
+        </ul>
+        <div class="form">
+          <h4 class="form__title">Заполните форму и получите<span class="select"> оптовый прайс-лист</span>нашей продукции
+          </h4>
+          <form>
+            <div class="form__wrapper">
+              <div class="form__item">
+                <label class="form__label">
+                </label><input class="form__input" type="email" palceholder="Введите Ваш e-mail"/>
+              </div>
+              <div class="form__item">
+                <label class="form__label">
+                </label><input class="form__input" type="email" palceholder="Введите Ваш e-mail"/>
+              </div>
+              <button class="form__btn">Получить прайс-
+              </button>
+              <p class="form__agreement">Нажимая на кнопку, Вы соглашаетесь с условиями политики конфиденциальности
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="advantages__wrapper container">
+        <div class="advantages__list">
+          <div class="advantages__item">
+            <div class="advantages__number">01
+            </div>
+            <p class="advantages__text">Мы производим сбалансированный полнорационный корм для собак и кошек, который не содержит в составе пшеницу, глютен, красители и ароматизаторы, которые могут вызывать аллергию у животных.
+            </p>
+          </div>
+          <div class="advantages__item">
+            <div class="advantages__number">02
+            </div>
+            <p class="advantages__text">Наше производство полностью находится на территории РФ, что позволяет избежать перебоев поставок из-за санкций. Мы постоянно наращиваем объемы производства. У Вас всегда будет ассортимент на полках магазина.
+            </p>
+          </div>
+          <div class="advantages__item">
+            <div class="advantages__number">03
+            </div>
+            <p class="advantages__text">Разработали уникальную упаковку, которая вызывает интерес у покупателей. Активно развиваем розничную торговлю и репутацию бренда с помощью современных инструментов маркетинга, продукт продает сам себя.
+            </p>
+          </div>
+          <div class="advantages__item">
+            <div class="advantages__number">04
+            </div>
+            <p class="advantages__text">Производим продукт, у которого складывается репутация “супер-премиум”, при этом наша цена гораздо ниже конкурентов.
+            </p>
+          </div>
+          <div class="advantages__item">
+            <div class="advantages__number">05
+            </div>
+            <p class="advantages__text">С нами зарабатывают уже 163 партнера по всей России. Присоединяйтесь и Вы.
+            </p>
+          </div>
+          <div class="advantages__item">
+            <div class="advantages__number">06
+            </div>
+            <p class="advantages__text">Мы сотрудничаем с заводчиками и питомниками, предоставляем особые условия.
+            </p>
+          </div>
+        </div>
+        <div class="form form--advantages">
+          <h4 class="form__title">Заполните форму и получите<span class="select"> оптовый прайс-лист</span>нашей продукции
+          </h4>
+          <form>
+            <div class="form__wrapper">
+              <div class="form__item">
+                <label class="form__label">
+                </label><input class="form__input" type="email" palceholder="Введите Ваш e-mail"/>
+              </div>
+              <div class="form__item">
+                <label class="form__label">
+                </label><input class="form__input" type="email" palceholder="Введите Ваш e-mail"/>
+              </div>
+              <button class="form__btn">Получить прайс-
+              </button>
+              <p class="form__agreement">Нажимая на кнопку, Вы соглашаетесь с условиями политики конфиденциальности
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="partners">
+      <div class="partners__wrapper container">
+        <div class="partners__h2 title">Наши основные<span class="select"> партнеры</span>– это:
+        </div>
+        <div class="partners__list">
+          <div class="partners__item"><img class="partners__img" src="img/partners/partners1" alt="partners-1" title=""/>
+          </div>
+          <div class="partners__item"><img class="partners__img" src="img/partners/partners2" alt="partners-2" title=""/>
+          </div>
+          <div class="partners__item"><img class="partners__img" src="img/partners/partners3" alt="partners-3" title=""/>
+          </div>
+          <div class="partners__item"><img class="partners__img" src="img/partners/partners4" alt="partners-4" title=""/>
+          </div>
+          <div class="partners__item"><img class="partners__img" src="img/partners/partners5" alt="partners-5" title=""/>
+          </div>
+          <div class="partners__item"><img class="partners__img" src="img/partners/partners6" alt="partners-6" title=""/>
+          </div>
+          <div class="partners__item"><img class="partners__img" src="img/partners/partners7" alt="partners-7" title=""/>
+          </div>
+          <div class="partners__item"><img class="partners__img" src="img/partners/partners8" alt="partners-8" title=""/>
+          </div>
+          <div class="partners__item"><img class="partners__img" src="img/partners/partners9" alt="partners-9" title=""/>
+          </div>
+          <div class="partners__item"><img class="partners__img" src="img/partners/partners10" alt="partners-10" title=""/>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="test">
+      <div class="test__wrapper">
+        <div class="test__content">
+          <div class="test__h4 title">Пройдите<span class="select"> простой тест</span>и получите персональное предложение
+          </div>
+          <button class="test__btn">Пройти тест
+          </button>
+        </div>
+        <div class="test__img-wrapper"><img class="test__img" src="img/test-dog.png" alt="" role="presentation"/>
+        </div>
+      </div>
+    </section>
+    <section class="team">
+      <div class="wrapper">
+        <h2 class="title"><span class="select"> Люди</span>, которые создают продукт GRAND PRIX
+        </h2>
+        <div class="team-gallery">
+          <div class="team-gallery__item">
+            <div class="team-gallery__img-wrapper"><img class="team-gallery__img" src="img/team/team-1" alt="team-1" title=""/>
+            </div>
+            <h5 class="team-gallery__name">Анна Андрианова
+            </h5>
+            <div class="team-gallery__post">Менеджер по работе с ключевыми клиентами
+            </div>
+            <div class="team-gallery__pet">Питомец: Пес Бамси
+            </div>
+          </div>
+          <div class="team-gallery__item">
+            <div class="team-gallery__img-wrapper"><img class="team-gallery__img" src="img/team/team-2" alt="team-2" title=""/>
+            </div>
+            <h5 class="team-gallery__name">Вячеслав Пономарев
+            </h5>
+            <div class="team-gallery__post">Менеджер по продажам
+            </div>
+            <div class="team-gallery__pet">Питомец: Кот Бонифаций
+            </div>
+          </div>
+          <div class="team-gallery__item">
+            <div class="team-gallery__img-wrapper"><img class="team-gallery__img" src="img/team/team-3" alt="team-3" title=""/>
+            </div>
+            <h5 class="team-gallery__name">Павел Юшков
+            </h5>
+            <div class="team-gallery__post">Менеджер по продажам
+            </div>
+            <div class="team-gallery__pet">Питомец: Кошка Ося
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="catalog">
+      <div class="wrapper">
+        <div class="head">
+          <div class="head-list">
+            <div class="head-item">для кошек
+            </div>
+            <div class="head-item">для собак
+            </div>
+          </div>
+        </div>
+        <div class="body">
+          <div class="body-item">
+            <div class="list">
+            </div>
+            <div class="item">
+              <div class="img-wrapper"><img class="img" src="img/team/team-1" alt="team-1" title=""/>
+              </div>
+              <h5 class="title">GRAND PRIX KITTEN корм для котят с лососем 300 г
+              </h5><a class="more" href="#"> Подробнее</a>
+              <button class="btn">Узнать цену
+              </button>
+            </div>
+            <div class="item">
+              <div class="img-wrapper"><img class="img" src="img/team/team-2" alt="team-2" title=""/>
+              </div>
+              <h5 class="title">GRAND PRIX KITTEN корм для котят с лососем 1.5 кг
+              </h5><a class="more" href="#"> Подробнее</a>
+              <button class="btn">Узнать цену
+              </button>
+            </div>
+            <div class="item">
+              <div class="img-wrapper"><img class="img" src="img/team/team-3" alt="team-3" title=""/>
+              </div>
+              <h5 class="title">GRAND PRIX ORIGINAL корм для кошек с лососем 300 г
+              </h5><a class="more" href="#"> Подробнее</a>
+              <button class="btn">Узнать цену
+              </button>
+            </div>
+            <div class="item">
+              <div class="img-wrapper"><img class="img" src="img/team/team-4" alt="team-4" title=""/>
+              </div>
+              <h5 class="title">GRAND PRIX ORIGINAL корм для кошек с лососем 1.5 кг
+              </h5><a class="more" href="#"> Подробнее</a>
+              <button class="btn">Узнать цену
+              </button>
+            </div>
+            <div class="item">
+              <div class="img-wrapper"><img class="img" src="img/team/team-5" alt="team-5" title=""/>
+              </div>
+              <h5 class="title">GRAND PRIX STERILIZED корм для стерилизованных кошек с кроликом 300 г
+              </h5><a class="more" href="#"> Подробнее</a>
+              <button class="btn">Узнать цену
+              </button>
+            </div>
+            <div class="item">
+              <div class="img-wrapper"><img class="img" src="img/team/team-6" alt="team-6" title=""/>
+              </div>
+              <h5 class="title">GRAND PRIX STERILIZED корм для стерилизованных кошек с кроликом 1.5 кг
+              </h5><a class="more" href="#"> Подробнее</a>
+              <button class="btn">Узнать цену
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews-partners">
+      <div class="wrapper">
+        <h2 class="title">
+          <sapn class="select">Отзывы</sapn>наших партнёров
+        </h2>
+        <div class="list">
+          <div class="item"><img class="img" src="1" alt="reviews-1" title=""/>
+          </div>
+          <div class="item"><img class="img" src="2" alt="reviews-2" title=""/>
+          </div>
+          <div class="item"><img class="img" src="3" alt="reviews-3" title=""/>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="wrapper">
+        <h2 class="title">Что говорят
+          <sapn class="select"> хозяева питомцев</sapn> о GRAND PRIX
+        </h2>
+        <div class="list">
+          <div class="item">
+            <div class="item-top">
+              <div class="avatar-wrapper"><img class="avatar" src="1" alt="reviews-1" title=""/>
+              </div>
+              <div class="name">Алина Алинова
+              </div>
+              <div class="post">генеральный директор компании AAA
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="item">
+            <div class="item-top">
+              <div class="avatar-wrapper"><img class="avatar" src="1" alt="reviews-1" title=""/>
+              </div>
+              <div class="name">Алина Алинова
+              </div>
+              <div class="post">генеральный директор компании AAA
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="item">
+            <div class="item-top">
+              <div class="avatar-wrapper"><img class="avatar" src="1" alt="reviews-1" title=""/>
+              </div>
+              <div class="name">Алина Алинова
+              </div>
+              <div class="post">генеральный директор компании AAA
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="act">
+      <div class="act__wrapper container">
+        <h3 class="act__title">
+          Получите 1-ю партию корма для животных<span class="select"> супер-премиум класса</span>российского производства на особых условиях
+        </h3>
+        <ul class="act__list">
+          <li class="act__item">Маржинальность до 100%
+          </li>
+          <li class="act__item">Собственное производство в РФ
+          </li>
+          <li class="act__item">Бесплатная доставка от 1 дня
+          </li>
+          <li class="act__item">Для магазинов, питомников, <br> заводчиков, оптовиков
+          </li>
+        </ul>
+        <div class="form">
+          <h4 class="form__title">Заполните форму и получите<span class="select"> оптовый прайс-лист</span>нашей продукции
+          </h4>
+          <form>
+            <div class="form__wrapper">
+              <div class="form__item">
+                <label class="form__label">
+                </label><input class="form__input" type="email" palceholder="Введите Ваш e-mail"/>
+              </div>
+              <div class="form__item">
+                <label class="form__label">
+                </label><input class="form__input" type="email" palceholder="Введите Ваш e-mail"/>
+              </div>
+              <button class="form__btn">Получить прайс-
+              </button>
+              <p class="form__agreement">Нажимая на кнопку, Вы соглашаетесь с условиями политики конфиденциальности
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__wrapper container">
+        <div class="footer__logo-wrapper"><img class="footer__logo" src="img/logo.svg" alt="" role="presentation"/>
+        </div>
+        <div class="footer__contacts"><a class="footer__phone" src="tel:88001234567">8 800 123 45 67</a><a class="footer__callback" href="#callback">Заказать обратный звонок</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
