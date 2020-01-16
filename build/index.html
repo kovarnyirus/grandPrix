@@ -11,25 +11,27 @@
     <!-- Custom Browsers Color-->
     <meta name="theme-color" content="#b9a783">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <script defer type="text/javascript" src="js/jQuery.js"></script>
+    <script defer type="text/javascript" src="js/slick.js"></script>
     <script defer type="text/javascript" src="js/main.js"></script>
   </head>
   <body>
     <header class="header">
-      <div class="header__wrapper"><a class="header__logo-link"><img class="header__logo" src="logo.svg" width="102" alt="" role="presentation"/></a>
+      <div class="header__wrapper container"><a class="header__logo-link"><img class="header__logo" src="img/logo.svg" width="102" alt="" role="presentation"/></a>
         <nav class="main-nav">
           <button class="main-nav__toggle"><span></span>
           </button>
-          <ul class="main-nav__list"><li>
-            <ul class="main-nav__item"><li><a class="main-nav__link">почему мы</a></li>
-            </ul></li><li>
-            <ul class="main-nav__item"><li><a class="main-nav__link">партнеры</a></li>
-            </ul></li><li>
-            <ul class="main-nav__item"><li><a class="main-nav__link">команда</a></li>
-            </ul></li><li>
-            <ul class="main-nav__item"><li><a class="main-nav__link">каталог</a></li>
-            </ul></li><li>
-            <ul class="main-nav__item"><li><a class="main-nav__link">условия сотрудничества</a></li>
-            </ul></li>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link">почему мы</a>
+            </li>
+            <li class="main-nav__item"><a class="main-nav__link">партнеры</a>
+            </li>
+            <li class="main-nav__item"><a class="main-nav__link">команда</a>
+            </li>
+            <li class="main-nav__item"><a class="main-nav__link">каталог</a>
+            </li>
+            <li class="main-nav__item"><a class="main-nav__link">условия сотрудничества</a>
+            </li>
           </ul>
         </nav>
         <div class="header__contacts"><a class="header__tel" href="tel:88001234567">8 800 123 45 67</a><a class="header__callback" href="#callback">Заказать обратный звонок</a>
@@ -38,8 +40,10 @@
     </header>
     <section class="act">
       <div class="act__wrapper container">
+        <div class="act__pets-wrapper"><img class="act__pets" src="img/header-pet.png" alt="" role="presentation"/>
+        </div>
         <h3 class="act__title">
-          Получите 1-ю партию корма для животных<span class="select"> супер-премиум класса</span>российского производства на особых условиях
+          Получите 1-ю партию корма для животных<span class="select"> супер-премиум класса</span> российского производства на особых условиях
         </h3>
         <ul class="act__list">
           <li class="act__item">Маржинальность до 100%
@@ -52,19 +56,19 @@
           </li>
         </ul>
         <div class="form">
-          <h4 class="form__title">Заполните форму и получите<span class="select"> оптовый прайс-лист</span>нашей продукции
+          <h4 class="form__title">Заполните форму и получите<span class="select"> оптовый прайс-лист</span> нашей продукции
           </h4>
           <form>
             <div class="form__wrapper">
               <div class="form__item">
                 <label class="form__label">
-                </label><input class="form__input" type="email" palceholder="Введите Ваш e-mail"/>
+                </label><input class="form__input" type="email" placeholder="Введите Ваш e-mail"/>
               </div>
               <div class="form__item">
-                <label class="form__label">
-                </label><input class="form__input" type="email" palceholder="Введите Ваш e-mail"/>
+                <label class="form__label form__label--phone">
+                </label><input class="form__input" type="tel"/>
               </div>
-              <button class="form__btn">Получить прайс-
+              <button class="form__btn btn">Получить прайс-лист
               </button>
               <p class="form__agreement">Нажимая на кнопку, Вы соглашаетесь с условиями политики конфиденциальности
               </p>
@@ -75,58 +79,60 @@
     </section>
     <section class="advantages">
       <div class="advantages__wrapper container">
+        <h2 class="advantages__title">Почему Вам стоит стать нашими официальными партнерами<span class="select"> уже сегодня</span>
+        </h2>
         <div class="advantages__list">
           <div class="advantages__item">
-            <div class="advantages__number">01
+            <div class="advantages__item-number">01
             </div>
-            <p class="advantages__text">Мы производим сбалансированный полнорационный корм для собак и кошек, который не содержит в составе пшеницу, глютен, красители и ароматизаторы, которые могут вызывать аллергию у животных.
+            <p class="advantages__item-text">Мы производим сбалансированный полнорационный корм для собак и кошек, который не содержит в составе пшеницу, глютен, красители и ароматизаторы, которые могут вызывать аллергию у животных.
             </p>
           </div>
           <div class="advantages__item">
-            <div class="advantages__number">02
+            <div class="advantages__item-number">02
             </div>
-            <p class="advantages__text">Наше производство полностью находится на территории РФ, что позволяет избежать перебоев поставок из-за санкций. Мы постоянно наращиваем объемы производства. У Вас всегда будет ассортимент на полках магазина.
+            <p class="advantages__item-text">Наше производство полностью находится на территории РФ, что позволяет избежать перебоев поставок из-за санкций. Мы постоянно наращиваем объемы производства. У Вас всегда будет ассортимент на полках магазина.
             </p>
           </div>
           <div class="advantages__item">
-            <div class="advantages__number">03
+            <div class="advantages__item-number">03
             </div>
-            <p class="advantages__text">Разработали уникальную упаковку, которая вызывает интерес у покупателей. Активно развиваем розничную торговлю и репутацию бренда с помощью современных инструментов маркетинга, продукт продает сам себя.
+            <p class="advantages__item-text">Разработали уникальную упаковку, которая вызывает интерес у покупателей. Активно развиваем розничную торговлю и репутацию бренда с помощью современных инструментов маркетинга, продукт продает сам себя.
             </p>
           </div>
           <div class="advantages__item">
-            <div class="advantages__number">04
+            <div class="advantages__item-number">04
             </div>
-            <p class="advantages__text">Производим продукт, у которого складывается репутация “супер-премиум”, при этом наша цена гораздо ниже конкурентов.
+            <p class="advantages__item-text">Производим продукт, у которого складывается репутация “супер-премиум”, при этом наша цена гораздо ниже конкурентов.
             </p>
           </div>
           <div class="advantages__item">
-            <div class="advantages__number">05
+            <div class="advantages__item-number">05
             </div>
-            <p class="advantages__text">С нами зарабатывают уже 163 партнера по всей России. Присоединяйтесь и Вы.
+            <p class="advantages__item-text">С нами зарабатывают уже 163 партнера по всей России. Присоединяйтесь и Вы.
             </p>
           </div>
           <div class="advantages__item">
-            <div class="advantages__number">06
+            <div class="advantages__item-number">06
             </div>
-            <p class="advantages__text">Мы сотрудничаем с заводчиками и питомниками, предоставляем особые условия.
+            <p class="advantages__item-text">Мы сотрудничаем с заводчиками и питомниками, предоставляем особые условия.
             </p>
           </div>
         </div>
         <div class="form form--advantages">
-          <h4 class="form__title">Заполните форму и получите<span class="select"> оптовый прайс-лист</span>нашей продукции
+          <h4 class="form__title">Заполните форму, получите<span class="select"> оптовый прайс-лист</span> и станьте нашим партнером уже сегодня<span class="select"> нашей продукции</span>
           </h4>
           <form>
             <div class="form__wrapper">
               <div class="form__item">
                 <label class="form__label">
-                </label><input class="form__input" type="email" palceholder="Введите Ваш e-mail"/>
+                </label><input class="form__input" type="email" placeholder="Введите Ваш e-mail"/>
               </div>
               <div class="form__item">
-                <label class="form__label">
-                </label><input class="form__input" type="email" palceholder="Введите Ваш e-mail"/>
+                <label class="form__label form__label--phone">
+                </label><input class="form__input" type="tel"/>
               </div>
-              <button class="form__btn">Получить прайс-
+              <button class="form__btn btn">Получить прайс
               </button>
               <p class="form__agreement">Нажимая на кнопку, Вы соглашаетесь с условиями политики конфиденциальности
               </p>
@@ -137,28 +143,28 @@
     </section>
     <section class="partners">
       <div class="partners__wrapper container">
-        <div class="partners__h2 title">Наши основные<span class="select"> партнеры</span>– это:
-        </div>
+        <h2 class="partners__title">Наши основные<span class="select"> партнеры</span>&nbsp;–&nbsp; это:
+        </h2>
         <div class="partners__list">
-          <div class="partners__item"><img class="partners__img" src="img/partners/partners1" alt="partners-1" title=""/>
+          <div class="partners__item"><img class="partners__img" src="img/partners/partners-1.png" alt="partners-1" title=""/>
           </div>
-          <div class="partners__item"><img class="partners__img" src="img/partners/partners2" alt="partners-2" title=""/>
+          <div class="partners__item"><img class="partners__img" src="img/partners/partners-2.png" alt="partners-2" title=""/>
           </div>
-          <div class="partners__item"><img class="partners__img" src="img/partners/partners3" alt="partners-3" title=""/>
+          <div class="partners__item"><img class="partners__img" src="img/partners/partners-3.png" alt="partners-3" title=""/>
           </div>
-          <div class="partners__item"><img class="partners__img" src="img/partners/partners4" alt="partners-4" title=""/>
+          <div class="partners__item"><img class="partners__img" src="img/partners/partners-4.png" alt="partners-4" title=""/>
           </div>
-          <div class="partners__item"><img class="partners__img" src="img/partners/partners5" alt="partners-5" title=""/>
+          <div class="partners__item"><img class="partners__img" src="img/partners/partners-5.png" alt="partners-5" title=""/>
           </div>
-          <div class="partners__item"><img class="partners__img" src="img/partners/partners6" alt="partners-6" title=""/>
+          <div class="partners__item"><img class="partners__img" src="img/partners/partners-6.png" alt="partners-6" title=""/>
           </div>
-          <div class="partners__item"><img class="partners__img" src="img/partners/partners7" alt="partners-7" title=""/>
+          <div class="partners__item"><img class="partners__img" src="img/partners/partners-7.png" alt="partners-7" title=""/>
           </div>
-          <div class="partners__item"><img class="partners__img" src="img/partners/partners8" alt="partners-8" title=""/>
+          <div class="partners__item"><img class="partners__img" src="img/partners/partners-8.png" alt="partners-8" title=""/>
           </div>
-          <div class="partners__item"><img class="partners__img" src="img/partners/partners9" alt="partners-9" title=""/>
+          <div class="partners__item"><img class="partners__img" src="img/partners/partners-9.png" alt="partners-9" title=""/>
           </div>
-          <div class="partners__item"><img class="partners__img" src="img/partners/partners10" alt="partners-10" title=""/>
+          <div class="partners__item"><img class="partners__img" src="img/partners/partners-10.png" alt="partners-10" title=""/>
           </div>
         </div>
       </div>
@@ -166,9 +172,9 @@
     <section class="test">
       <div class="test__wrapper">
         <div class="test__content">
-          <div class="test__h4 title">Пройдите<span class="select"> простой тест</span>и получите персональное предложение
-          </div>
-          <button class="test__btn">Пройти тест
+          <h4 class="test__title">Пройдите<span class="select"> простой тест</span> и получите персональное предложение
+          </h4>
+          <button class="test__btn btn">Пройти тест
           </button>
         </div>
         <div class="test__img-wrapper"><img class="test__img" src="img/test-dog.png" alt="" role="presentation"/>
@@ -181,7 +187,7 @@
         </h2>
         <div class="team-gallery">
           <div class="team-gallery__item">
-            <div class="team-gallery__img-wrapper"><img class="team-gallery__img" src="img/team/team-1" alt="team-1" title=""/>
+            <div class="team-gallery__img-wrapper"><img class="team-gallery__img" src="img/team/team-1.jpg" alt="team-1" title=""/>
             </div>
             <h5 class="team-gallery__name">Анна Андрианова
             </h5>
@@ -191,7 +197,7 @@
             </div>
           </div>
           <div class="team-gallery__item">
-            <div class="team-gallery__img-wrapper"><img class="team-gallery__img" src="img/team/team-2" alt="team-2" title=""/>
+            <div class="team-gallery__img-wrapper"><img class="team-gallery__img" src="img/team/team-2.jpg" alt="team-2" title=""/>
             </div>
             <h5 class="team-gallery__name">Вячеслав Пономарев
             </h5>
@@ -201,7 +207,7 @@
             </div>
           </div>
           <div class="team-gallery__item">
-            <div class="team-gallery__img-wrapper"><img class="team-gallery__img" src="img/team/team-3" alt="team-3" title=""/>
+            <div class="team-gallery__img-wrapper"><img class="team-gallery__img" src="img/team/team-3.jpg" alt="team-3" title=""/>
             </div>
             <h5 class="team-gallery__name">Павел Юшков
             </h5>
@@ -214,121 +220,175 @@
       </div>
     </section>
     <section class="catalog">
-      <div class="wrapper">
-        <div class="head">
-          <div class="head-list">
-            <div class="head-item">для кошек
+      <h2 class="catalog__title"><span class="select">Каталог</span> продукции GRAND PRIX
+      </h2>
+      <div class="catalog__wrapper">
+        <div class="catalog__head">
+          <div class="catalog__head-list">
+            <div class="catalog__head-item">для кошек
             </div>
-            <div class="head-item">для собак
+            <div class="catalog__head-item">для собак
             </div>
           </div>
         </div>
-        <div class="body">
-          <div class="body-item">
-            <div class="list">
-            </div>
-            <div class="item">
-              <div class="img-wrapper"><img class="img" src="img/team/team-1" alt="team-1" title=""/>
+        <div class="catalog__body">
+          <div class="catalog__body-item">
+            <div class="catalog__list">
+              <div class="catalog__item">
+                <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-1.png" alt="team-1" width="75px" title=""/>
+                </div>
+                <h5 class="catalog__name">GRAND PRIX KITTEN корм для котят с лососем 300 г
+                </h5><a class="catalog__more" href="#"> Подробнее</a>
+                <button class="catalog__btn btn">Узнать цену
+                </button>
               </div>
-              <h5 class="title">GRAND PRIX KITTEN корм для котят с лососем 300 г
-              </h5><a class="more" href="#"> Подробнее</a>
-              <button class="btn">Узнать цену
-              </button>
-            </div>
-            <div class="item">
-              <div class="img-wrapper"><img class="img" src="img/team/team-2" alt="team-2" title=""/>
+              <div class="catalog__item">
+                <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-2.png" alt="team-2" width="75px" title=""/>
+                </div>
+                <h5 class="catalog__name">GRAND PRIX KITTEN корм для котят с лососем 1.5 кг
+                </h5><a class="catalog__more" href="#"> Подробнее</a>
+                <button class="catalog__btn btn">Узнать цену
+                </button>
               </div>
-              <h5 class="title">GRAND PRIX KITTEN корм для котят с лососем 1.5 кг
-              </h5><a class="more" href="#"> Подробнее</a>
-              <button class="btn">Узнать цену
-              </button>
-            </div>
-            <div class="item">
-              <div class="img-wrapper"><img class="img" src="img/team/team-3" alt="team-3" title=""/>
+              <div class="catalog__item">
+                <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-3.png" alt="team-3" width="75px" title=""/>
+                </div>
+                <h5 class="catalog__name">GRAND PRIX ORIGINAL корм для кошек с лососем 300 г
+                </h5><a class="catalog__more" href="#"> Подробнее</a>
+                <button class="catalog__btn btn">Узнать цену
+                </button>
               </div>
-              <h5 class="title">GRAND PRIX ORIGINAL корм для кошек с лососем 300 г
-              </h5><a class="more" href="#"> Подробнее</a>
-              <button class="btn">Узнать цену
-              </button>
-            </div>
-            <div class="item">
-              <div class="img-wrapper"><img class="img" src="img/team/team-4" alt="team-4" title=""/>
+              <div class="catalog__item">
+                <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-4.png" alt="team-4" width="75px" title=""/>
+                </div>
+                <h5 class="catalog__name">GRAND PRIX ORIGINAL корм для кошек с лососем 1.5 кг
+                </h5><a class="catalog__more" href="#"> Подробнее</a>
+                <button class="catalog__btn btn">Узнать цену
+                </button>
               </div>
-              <h5 class="title">GRAND PRIX ORIGINAL корм для кошек с лососем 1.5 кг
-              </h5><a class="more" href="#"> Подробнее</a>
-              <button class="btn">Узнать цену
-              </button>
-            </div>
-            <div class="item">
-              <div class="img-wrapper"><img class="img" src="img/team/team-5" alt="team-5" title=""/>
+              <div class="catalog__item">
+                <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-5.png" alt="team-5" width="75px" title=""/>
+                </div>
+                <h5 class="catalog__name">GRAND PRIX STERILIZED корм для стерилизованных кошек с кроликом 300 г
+                </h5><a class="catalog__more" href="#"> Подробнее</a>
+                <button class="catalog__btn btn">Узнать цену
+                </button>
               </div>
-              <h5 class="title">GRAND PRIX STERILIZED корм для стерилизованных кошек с кроликом 300 г
-              </h5><a class="more" href="#"> Подробнее</a>
-              <button class="btn">Узнать цену
-              </button>
-            </div>
-            <div class="item">
-              <div class="img-wrapper"><img class="img" src="img/team/team-6" alt="team-6" title=""/>
+              <div class="catalog__item">
+                <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-6.png" alt="team-6" width="75px" title=""/>
+                </div>
+                <h5 class="catalog__name">GRAND PRIX STERILIZED корм для стерилизованных кошек с кроликом 1.5 кг
+                </h5><a class="catalog__more" href="#"> Подробнее</a>
+                <button class="catalog__btn btn">Узнать цену
+                </button>
               </div>
-              <h5 class="title">GRAND PRIX STERILIZED корм для стерилизованных кошек с кроликом 1.5 кг
-              </h5><a class="more" href="#"> Подробнее</a>
-              <button class="btn">Узнать цену
-              </button>
+            </div>
+          </div>
+          <div class="catalog__body-item">
+            <div class="catalog__list">
+              <div class="catalog__item">
+                <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-1.png" alt="team-1" width="75px" title=""/>
+                </div>
+                <h5 class="catalog__name">GRAND PRIX KITTEN2 корм для котят с лососем 300 г
+                </h5><a class="catalog__more" href="#"> Подробнее</a>
+                <button class="catalog__btn btn">Узнать цену
+                </button>
+              </div>
+              <div class="catalog__item">
+                <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-2.png" alt="team-2" width="75px" title=""/>
+                </div>
+                <h5 class="catalog__name">GRAND PRIX KITTEN2 корм для котят с лососем 1.5 кг
+                </h5><a class="catalog__more" href="#"> Подробнее</a>
+                <button class="catalog__btn btn">Узнать цену
+                </button>
+              </div>
+              <div class="catalog__item">
+                <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-3.png" alt="team-3" width="75px" title=""/>
+                </div>
+                <h5 class="catalog__name">GRAND PRIX ORIGINAL2 корм для кошек с лососем 300 г
+                </h5><a class="catalog__more" href="#"> Подробнее</a>
+                <button class="catalog__btn btn">Узнать цену
+                </button>
+              </div>
+              <div class="catalog__item">
+                <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-4.png" alt="team-4" width="75px" title=""/>
+                </div>
+                <h5 class="catalog__name">GRAND PRIX ORIGINAL2 корм для кошек с лососем 1.5 кг
+                </h5><a class="catalog__more" href="#"> Подробнее</a>
+                <button class="catalog__btn btn">Узнать цену
+                </button>
+              </div>
+              <div class="catalog__item">
+                <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-5.png" alt="team-5" width="75px" title=""/>
+                </div>
+                <h5 class="catalog__name">GRAND PRIX STERILIZED2 корм для стерилизованных кошек с кроликом 300 г
+                </h5><a class="catalog__more" href="#"> Подробнее</a>
+                <button class="catalog__btn btn">Узнать цену
+                </button>
+              </div>
+              <div class="catalog__item">
+                <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-6.png" alt="team-6" width="75px" title=""/>
+                </div>
+                <h5 class="catalog__name">GRAND PRIX STERILIZED2 корм для стерилизованных кошек с кроликом 1.5 кг
+                </h5><a class="catalog__more" href="#"> Подробнее</a>
+                <button class="catalog__btn btn">Узнать цену
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section class="reviews-partners">
-      <div class="wrapper">
-        <h2 class="title">
-          <sapn class="select">Отзывы</sapn>наших партнёров
+      <div class="reviews-partners__wrapper">
+        <h2 class="reviews-partners__title">
+          <sapn class="select">Отзывы</sapn> наших партнёров
         </h2>
-        <div class="list">
-          <div class="item"><img class="img" src="1" alt="reviews-1" title=""/>
+        <div class="reviews-partners__list">
+          <div class="reviews-partners__item"><img class="reviews-partners__img" src="img/reviewsPartners/reviews-1.png" alt="reviews-1" title=""/>
           </div>
-          <div class="item"><img class="img" src="2" alt="reviews-2" title=""/>
+          <div class="reviews-partners__item"><img class="reviews-partners__img" src="img/reviewsPartners/reviews-2.png" alt="reviews-2" title=""/>
           </div>
-          <div class="item"><img class="img" src="3" alt="reviews-3" title=""/>
+          <div class="reviews-partners__item"><img class="reviews-partners__img" src="img/reviewsPartners/reviews-3.png" alt="reviews-3" title=""/>
           </div>
         </div>
       </div>
     </section>
     <section class="reviews">
-      <div class="wrapper">
-        <h2 class="title">Что говорят
+      <div class="reviews__wrapper">
+        <h2 class="reviews__title">Что говорят
           <sapn class="select"> хозяева питомцев</sapn> о GRAND PRIX
         </h2>
-        <div class="list">
-          <div class="item">
-            <div class="item-top">
-              <div class="avatar-wrapper"><img class="avatar" src="1" alt="reviews-1" title=""/>
+        <div class="reviews__list">
+          <div class="reviews__item">
+            <div class="reviews__item-top">
+              <div class="reviews__avatar-wrapper"><img class="reviews__avatar" src="img/userAvatars/avatar-1.png" alt="reviews-1" title=""/>
               </div>
-              <div class="name">Алина Алинова
+              <div class="reviews__name">Алина Алинова
               </div>
-              <div class="post">генеральный директор компании AAA
-              </div>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="item">
-            <div class="item-top">
-              <div class="avatar-wrapper"><img class="avatar" src="1" alt="reviews-1" title=""/>
-              </div>
-              <div class="name">Алина Алинова
-              </div>
-              <div class="post">генеральный директор компании AAA
+              <div class="reviews__post">генеральный директор компании AAA
               </div>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
-          <div class="item">
-            <div class="item-top">
-              <div class="avatar-wrapper"><img class="avatar" src="1" alt="reviews-1" title=""/>
+          <div class="reviews__item">
+            <div class="reviews__item-top">
+              <div class="reviews__avatar-wrapper"><img class="reviews__avatar" src="img/userAvatars/avatar-1.png" alt="reviews-1" title=""/>
               </div>
-              <div class="name">Алина Алинова
+              <div class="reviews__name">Алина Алинова
               </div>
-              <div class="post">генеральный директор компании AAA
+              <div class="reviews__post">генеральный директор компании AAA
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="reviews__item">
+            <div class="reviews__item-top">
+              <div class="reviews__avatar-wrapper"><img class="reviews__avatar" src="img/userAvatars/avatar-1.png" alt="reviews-1" title=""/>
+              </div>
+              <div class="reviews__name">Алина Алинова
+              </div>
+              <div class="reviews__post">генеральный директор компании AAA
               </div>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -338,8 +398,10 @@
     </section>
     <section class="act">
       <div class="act__wrapper container">
+        <div class="act__pets-wrapper"><img class="act__pets" src="img/header-pet.png" alt="" role="presentation"/>
+        </div>
         <h3 class="act__title">
-          Получите 1-ю партию корма для животных<span class="select"> супер-премиум класса</span>российского производства на особых условиях
+          Получите 1-ю партию корма для животных<span class="select"> супер-премиум класса</span> российского производства на особых условиях
         </h3>
         <ul class="act__list">
           <li class="act__item">Маржинальность до 100%
@@ -352,19 +414,19 @@
           </li>
         </ul>
         <div class="form">
-          <h4 class="form__title">Заполните форму и получите<span class="select"> оптовый прайс-лист</span>нашей продукции
+          <h4 class="form__title">Заполните форму и получите<span class="select"> оптовый прайс-лист</span> нашей продукции
           </h4>
           <form>
             <div class="form__wrapper">
               <div class="form__item">
                 <label class="form__label">
-                </label><input class="form__input" type="email" palceholder="Введите Ваш e-mail"/>
+                </label><input class="form__input" type="email" placeholder="Введите Ваш e-mail"/>
               </div>
               <div class="form__item">
-                <label class="form__label">
-                </label><input class="form__input" type="email" palceholder="Введите Ваш e-mail"/>
+                <label class="form__label form__label--phone">
+                </label><input class="form__input" type="tel"/>
               </div>
-              <button class="form__btn">Получить прайс-
+              <button class="form__btn btn">Получить прайс-лист
               </button>
               <p class="form__agreement">Нажимая на кнопку, Вы соглашаетесь с условиями политики конфиденциальности
               </p>
@@ -375,7 +437,7 @@
     </section>
     <footer class="footer">
       <div class="footer__wrapper container">
-        <div class="footer__logo-wrapper"><img class="footer__logo" src="img/logo.svg" alt="" role="presentation"/>
+        <div class="footer__logo-wrapper"><img class="footer__logo" src="img/logo.svg" width="102" alt="" role="presentation"/>
         </div>
         <div class="footer__contacts"><a class="footer__phone" src="tel:88001234567">8 800 123 45 67</a><a class="footer__callback" href="#callback">Заказать обратный звонок</a>
         </div>

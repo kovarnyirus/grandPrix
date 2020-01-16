@@ -1,0 +1,15 @@
+.reviews-partners{
+  margin-bottom: 120px;
+  &__title{
+    margin-bottom: 39px;
+  }
+  &__item{
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-bottom: 30px;
+    opacity: .7;
+    &.slick-active{
+      opacity: 1;
+    }
+  }
+}

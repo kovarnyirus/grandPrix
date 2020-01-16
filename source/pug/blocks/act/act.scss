@@ -1,0 +1,51 @@
+.act {
+  margin-bottom: 83px;
+  &__wrapper {
+
+
+  }
+
+  &__pets-wrapper {
+    padding-left: 20px;
+    padding-right: 15px;
+  }
+
+  &__title {
+    margin-top: -20px;
+    font-family: AGAvalancheC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 144%;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+  }
+
+  &__list {
+    margin-bottom: 80px;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 15px;
+    font-family: AGAvalancheC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin-bottom: 11px;
+
+    &:before {
+      position: absolute;
+      display: block;
+      content: '';
+      left: 0;
+      top: 5px;
+      border-radius: 50%;
+      width: 7px;
+      height: 7px;
+      background-color: #FFD45A;
+    }
+  }
+}

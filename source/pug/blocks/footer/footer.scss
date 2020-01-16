@@ -1,0 +1,43 @@
+.footer{
+  padding-bottom: 60px;
+  margin-top: -30px;
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+  &__logo-wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 19px;
+  }
+  &__contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__phone{
+    font-family: AGAvalancheC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+  }
+  &__callback{
+    font-family: AGAvalancheC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #FFD45A;
+    padding-bottom: 3px;
+    border-bottom: 1px dashed #FFD45A;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}

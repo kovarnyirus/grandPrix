@@ -1,0 +1,12 @@
+mixin partners()
+	+b.SECTION.partners
+		+e.wrapper.container
+			+e.H2.title Наши основные
+				span.select  партнеры
+				|&nbsp;–&nbsp; это:
+			+e.list
+				mixin partnerItem(number)
+					+e.item
+						+e.img(src='img/partners/partners-' + number + '.png' alt='partners-' + number )
+				-for (var i = 1; i < 11; i++)
+						+partnerItem(i)

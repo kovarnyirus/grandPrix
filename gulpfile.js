@@ -89,6 +89,7 @@ gulp.task("copyFonts", function () {
 
 gulp.task("watch", function () {
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("style"));
+  gulp.watch("source/pug/**/*.{scss,sass}", gulp.series("style"));
   gulp.watch("source/pug/**/*.pug", gulp.series("pug"));
   gulp.watch("source/img/**/*.{png,jpg,svg}", gulp.series("image"));
   gulp.watch("source/js/**/*.js", gulp.series("copyJs"));

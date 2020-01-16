@@ -1,0 +1,59 @@
+.team {
+  margin-bottom: 140px;
+  &__wrapper {
+
+  }
+
+  &__title {
+
+  }
+}
+
+.team-gallery {
+  &__img-wrapper {
+    margin-bottom: 34px;
+  }
+
+  &__item{
+    margin-bottom: 20px;
+    margin-left: 7px;
+    margin-right: 7px;
+    opacity: .5;
+    &.slick-active{
+      opacity: 1;
+    }
+  }
+
+  &__name {
+    font-family: AGAvalancheC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 3px;
+  }
+
+  &__post {
+    font-family: AGAvalancheC;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 160%;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin-bottom: 3px;
+  }
+
+  &__pet {
+    font-family: AGAvalancheC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 160%;
+    text-align: center;
+    color: #FFD45A;
+  }
+}

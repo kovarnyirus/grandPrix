@@ -1,0 +1,13 @@
+mixin reviews-partners()
+	+b.SECTION.reviews-partners
+		+e.wrapper
+			+e.H2.title
+				sapn.select Отзывы
+				|  наших партнёров
+			+e.list
+				mixin reviewsPartnersItem(src)
+					+e.item
+						+e.img(src='img/reviewsPartners/reviews-' + src + '.png' alt='reviews-' + src )
+				-for (var i = 1; i < 4; i++)
+						+reviewsPartnersItem(i)
+

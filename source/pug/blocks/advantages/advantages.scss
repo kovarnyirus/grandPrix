@@ -1,0 +1,36 @@
+.advantages {
+  margin-bottom: 113px;
+  &__wrapper {
+
+  }
+
+  &__list {
+    margin-top: 47px;
+  }
+
+  &__item-number {
+    color: #FFE887;
+    font-family: AGAvalancheC;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1;
+  }
+
+  &__item-text {
+    font-family: AGAvalancheC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 180%;
+    color: #FFFFFF;
+    opacity: .85;
+  }
+
+  &__item {
+    margin-bottom: 37px;
+    &:last-child{
+      margin-bottom: 78px;
+    }
+  }
+}

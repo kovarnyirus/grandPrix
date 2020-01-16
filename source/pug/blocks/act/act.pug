@@ -1,0 +1,28 @@
+mixin act()
+	+b.SECTION.act
+		+e.wrapper.container
+			+e.pets-wrapper
+				+e.IMG.pets(src='img/header-pet.png')
+			+e.H3.title Получите 1-ю партию корма для животных
+				|
+				span.select  супер-премиум класса
+				|  российского производства на особых условиях
+			+e.UL.list
+				+e.item Маржинальность до 100%
+				+e.item Собственное производство в РФ
+				+e.item Бесплатная доставка от 1 дня
+				+e.item Для магазинов, питомников, <br> заводчиков, оптовиков
+			+b.form
+				+e.H4.title Заполните форму и получите
+					span.select  оптовый прайс-лист
+					|  нашей продукции
+				form
+					+e.wrapper
+						+e.item
+							+e.LABEL.label
+							+e.INPUT.input(type='email' placeholder='Введите Ваш e-mail')
+						+e.item
+							+e.LABEL.label--phone
+							+e.INPUT.input(type='tel')
+						+e.BUTTON.btn.btn Получить прайс-лист
+						+e.P.agreement Нажимая на кнопку, Вы соглашаетесь с условиями политики конфиденциальности

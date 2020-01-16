@@ -1,0 +1,17 @@
+mixin team()
+	+e.SECTION.team
+		+e.wrapper
+			+e.H2.title
+				span.select  Люди
+				| , которые создают продукт GRAND PRIX
+			+b.team-gallery
+				mixin galleryItem(img, userName, post, pet)
+					+e.item
+						+e.img-wrapper
+							+e.img(src='img/team/team-' + img + '.jpg' alt='team-' + img )
+						+e.H5.name= userName
+						+e.post= post
+						+e.pet= pet
+				+galleryItem('1', 'Анна Андрианова', 'Менеджер по работе с ключевыми клиентами', 'Питомец: Пес Бамси')
+				+galleryItem('2', 'Вячеслав Пономарев', 'Менеджер по продажам', 'Питомец: Кот Бонифаций')
+				+galleryItem('3', 'Павел Юшков', 'Менеджер по продажам', 'Питомец: Кошка Ося')
