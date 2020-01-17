@@ -14,9 +14,10 @@
 
   &__contacts {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
     order: 3;
+    flex-grow: 1;
   }
 
   &__tel {
@@ -28,6 +29,7 @@
     text-align: right;
     color: #FFFFFF;
     margin-bottom: 4px;
+    width: 100%;
   }
 
   &__callback {
@@ -40,18 +42,34 @@
     border-bottom: 1px dashed $accent-color;
     opacity: .7;
     transition: .2s;
-    &:hover{
+
+    &:hover {
       text-decoration: none;
       outline: none;
       color: $hover-color;
       opacity: 1;
     }
-    &:active{
+
+    &:active {
       text-decoration: none;
       outline: none;
       color: $active-color;
       border-color: $accent-color;
       opacity: 1;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    &__contacts {
+      flex-grow: 0;
+    }
+
+    &__logo-link {
+      padding-left: 0;
+    }
+
+    &__logo {
+      width: 122px;
     }
   }
 }

@@ -1,5 +1,6 @@
 .act {
   margin-bottom: 83px;
+
   &__wrapper {
   }
 
@@ -47,4 +48,24 @@
     }
   }
 
+  @include media-breakpoint-up(md) {
+    padding-bottom: 43px;
+
+    &__wrapper{
+      position: relative;
+      padding-top: 70px;
+    }
+    &__pets-wrapper{
+      width: 380px;
+      float: right;
+      max-width: 730px;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    &__title{
+
+      max-width: 50%;
+    }
+  }
 }

@@ -9,6 +9,16 @@ $( document ).ready(function() {
     dots: true,
     responsive: [
       {
+        breakpoint: 1024,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          infinite: true,
+          slidesToShow: 3
+        }
+      },
+      {
         breakpoint: 768,
         settings: {
           arrows: false,
@@ -37,6 +47,16 @@ $( document ).ready(function() {
     dots: true,
     responsive: [
       {
+        breakpoint: 1024,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          infinite: true,
+          slidesToShow: 3
+        }
+      },
+      {
         breakpoint: 768,
         settings: {
           arrows: false,
@@ -60,10 +80,20 @@ $( document ).ready(function() {
   $('.reviews__list').slick({
     centerMode: true,
     centerPadding: '60px',
-    slidesToShow: 3,
+    slidesToShow: 2,
     rows: 0,
     dots: true,
     responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          infinite: true,
+          slidesToShow: 2
+        }
+      },
       {
         breakpoint: 768,
         settings: {

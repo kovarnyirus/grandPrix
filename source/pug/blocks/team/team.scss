@@ -7,6 +7,12 @@
   &__title {
 
   }
+  @include media-breakpoint-up(md){
+    &__title{
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  }
 }
 
 .team-gallery {

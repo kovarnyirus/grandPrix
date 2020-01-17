@@ -16,6 +16,7 @@
     justify-content: space-between;
     margin-bottom: 75px;
   }
+
   &__head-item{
     font-family: AGAvalancheC;
     font-style: normal;
@@ -115,5 +116,18 @@
     width: 100%;
     min-height: 37px;
     margin-top: 10px;
+  }
+  @include media-breakpoint-up(md){
+    &__item{
+      width: 32%;
+    }
+    &__name{
+      margin-bottom: 20px;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+    &__btn{
+      font-size: 12px;
+    }
   }
 }

@@ -5,16 +5,19 @@
     display: flex;
     flex-direction: column;
   }
+
   &__logo-wrapper{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 19px;
   }
+
   &__contacts{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   &__phone{
     font-family: AGAvalancheC;
     font-style: normal;
@@ -25,6 +28,7 @@
     color: #FFFFFF;
     margin-bottom: 5px;
   }
+
   &__callback{
     font-family: AGAvalancheC;
     font-style: normal;
@@ -50,6 +54,23 @@
       color: $active-color;
       border-color: $accent-color;
       opacity: 1;
+    }
+  }
+  @include media-breakpoint-up(md){
+    &__wrapper{
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__logo-wrapper{
+      margin-left: 0;
+      margin-right: 0;
+      width: 122px;
+    }
+    &__logo{
+      width: 122px;
+    }
+    &__contacts{
+      align-items: flex-end;
     }
   }
 }
