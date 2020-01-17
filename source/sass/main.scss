@@ -5,6 +5,8 @@
 @import "vars";
 @import "media";
 @import "base";
+@import "../pug/blocks/header/header";
+@import "../pug/blocks/main-nav/main-nav";
 @import "../pug/blocks/act/act";
 @import "../pug/blocks/advantages/advantages";
 @import "../pug/blocks/partners/partners";
@@ -14,60 +16,3 @@
 @import "../pug/blocks/reviews-partners/reviews-partners";
 @import "../pug/blocks/reviews/reviews";
 @import "../pug/blocks/footer/footer";
-
-
-body{
-  min-width: 320px;
-  overflow-x: hidden;
-}
-.container{
-  padding-left: 15px;
-  padding-right: 15px;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.header{
- &__wrapper{
-   padding-top: 23px;
-   display: flex;
-   align-items: center;
- }
-  &__logo-link{
-    order: 2;
-    padding-left: 20px;
-  }
-  &__contacts{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    order: 3;
-  }
-  &__tel{
-    font-family: AGAvalancheC;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: right;
-    color: #FFFFFF;
-    margin-bottom: 4px;
-  }
-  &__callback{
-    color: #FFD45A;
-    font-size: 8px;
-    line-height: 10px;
-    text-align: right;
-    text-transform: uppercase;
-    padding-bottom: 4px;
-    border-bottom: 1px dashed #FFD45A;
-  }
-}
-
-.main-nav{
-  order: 1;
-  &__list{
-    display: none;
-  }
-}

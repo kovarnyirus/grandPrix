@@ -7,17 +7,17 @@ mixin catalogItem(img, title)
 		+e.BUTTON.btn.btn Узнать цену
 
 mixin catalog()
-	+b.SECTION.catalog
+	+b.SECTION.catalog#catalog
 		+e.H2.title
 			span.select Каталог
 			|  продукции GRAND PRIX
 		+e.wrapper
 			+e.head
 				+e.head-list
-					+e.head-item для кошек
+					+e.head-item.active для кошек
 					+e.head-item для собак
 			+e.body
-				+e.body-item
+				+e.body-item.active
 					+e.list
 
 						+catalogItem('1', 'GRAND PRIX KITTEN корм для котят с лососем 300 г')
@@ -30,9 +30,4 @@ mixin catalog()
 				+e.body-item
 					+e.list
 						+catalogItem('1', 'GRAND PRIX KITTEN2 корм для котят с лососем 300 г')
-						+catalogItem('2', 'GRAND PRIX KITTEN2 корм для котят с лососем 1.5 кг')
-						+catalogItem('3', 'GRAND PRIX ORIGINAL2 корм для кошек с лососем 300 г')
-						+catalogItem('4', 'GRAND PRIX ORIGINAL2 корм для кошек с лососем 1.5 кг')
-						+catalogItem('5', 'GRAND PRIX STERILIZED2 корм для стерилизованных кошек с кроликом 300 г')
-						+catalogItem('6', 'GRAND PRIX STERILIZED2 корм для стерилизованных кошек с кроликом 1.5 кг')
 

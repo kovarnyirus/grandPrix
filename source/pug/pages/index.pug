@@ -1,4 +1,6 @@
 extends layout/main
+include ../blocks/mixins/mixins
+include ../blocks/header/header
 include ../blocks/act/act
 include ../blocks/advantages/advantages
 include ../blocks/partners/partners
@@ -13,28 +15,8 @@ include ../blocks/footer/footer
 block title
 	title Grand Prix
 block pagecontent
-	+b.HEADER.header
-		+e.wrapper.container
-			+e.A.logo-link
-				+e.IMG.logo(src='img/logo.svg' width='102')
-			+b.NAV.main-nav
-				+e.BUTTON.toggle
-					span
-				+e.UL.list
-					+e.LI.item
-						+e.A.link почему мы
-					+e.LI.item
-						+e.A.link партнеры
-					+e.LI.item
-						+e.A.link команда
-					+e.LI.item
-						+e.A.link каталог
-					+e.LI.item
-						+e.A.link условия сотрудничества
-			+e.contacts
-				+e.A.tel(href='tel:88001234567') 8 800 123 45 67
-				+e.A.callback(href='#callback') Заказать обратный звонок
-	+act()
+	+header()
+	+act('1')
 	+advantages()
 	+partners()
 	+test()
@@ -42,7 +24,7 @@ block pagecontent
 	+catalog()
 	+reviews-partners()
 	+reviews()
-	+act()
+	+act('2')
 	+footer()
 
 

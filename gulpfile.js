@@ -61,12 +61,12 @@ gulp.task("webp", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/icons/icon-*.svg")
+  return gulp.src("source/img/svg/icon-*.svg")
     .pipe(svgstore({
       inlineSVG: true
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img/"))
+    .pipe(gulp.dest("build/img/svg"))
 });
 
 gulp.task("copyJs", function () {

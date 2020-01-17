@@ -1,4 +1,14 @@
-mixin act()
+mixin input-mail(id)
+	+e.LABEL.label(for='mail' + id)
+		+icon('mail')
+	+e.INPUT.input(type='email' placeholder='Введите Ваш e-mail' id='mail' + id)
+
+mixin input-phone(id)
+	+e.LABEL.label--phone(for='phone' + id)
+		+icon('phone')
+	+e.INPUT.input(type='tel' id='phone' + id)
+
+mixin act(id)
 	+b.SECTION.act
 		+e.wrapper.container
 			+e.pets-wrapper
@@ -19,10 +29,8 @@ mixin act()
 				form
 					+e.wrapper
 						+e.item
-							+e.LABEL.label
-							+e.INPUT.input(type='email' placeholder='Введите Ваш e-mail')
+							+input-mail(id)
 						+e.item
-							+e.LABEL.label--phone
-							+e.INPUT.input(type='tel')
+							+input-phone(id)
 						+e.BUTTON.btn.btn Получить прайс-лист
 						+e.P.agreement Нажимая на кнопку, Вы соглашаетесь с условиями политики конфиденциальности

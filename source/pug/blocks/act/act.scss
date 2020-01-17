@@ -1,8 +1,6 @@
 .act {
   margin-bottom: 83px;
   &__wrapper {
-
-
   }
 
   &__pets-wrapper {
@@ -45,7 +43,8 @@
       border-radius: 50%;
       width: 7px;
       height: 7px;
-      background-color: #FFD45A;
+      background-color: $accent-color;
     }
   }
+
 }

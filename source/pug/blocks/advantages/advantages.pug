@@ -1,5 +1,5 @@
 mixin advantages()
-	+b.SECTION.advantages
+	+b.SECTION.advantages#advantages
 		+e.wrapper.container
 			+e.H2.title Почему Вам стоит стать нашими официальными партнерами
 				span.select  уже сегодня
@@ -22,10 +22,12 @@ mixin advantages()
 				form
 					+e.wrapper
 						+e.item
-							+e.LABEL.label
-							+e.INPUT.input(type='email' placeholder='Введите Ваш e-mail')
+							+e.LABEL.label(for='mail')
+								+icon('mail')
+							+e.INPUT.input(type='email' placeholder='Введите Ваш e-mail' id='mail')
 						+e.item
-							+e.LABEL.label--phone
-							+e.INPUT.input(type='tel')
+							+e.LABEL.label--phone(for='phone')
+								+icon('phone')
+							+e.INPUT.input(type='tel' id='phone')
 						+e.BUTTON.btn.btn Получить прайс
 						+e.P.agreement Нажимая на кнопку, Вы соглашаетесь с условиями политики конфиденциальности

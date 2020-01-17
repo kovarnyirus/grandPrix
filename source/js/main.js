@@ -85,4 +85,25 @@ $( document ).ready(function() {
     ]
   });
 
+  function tabscostume(tab) {
+    $('.' + tab + '__head').on('click', '.' + tab + '__head-item:not(.active)', function (e) {
+      $(this)
+        .addClass('active').siblings().removeClass('active')
+        .closest('.' + tab).find('.' + tab + '__body-item').removeClass('active').eq($(this).index()).addClass('active');
+    });
+  };
+  tabscostume('catalog');
+
+  $(".main-nav__toggle").click(function () {
+    $(this).closest('.main-nav').toggleClass("main-nav--open");
+  });
+
+  $(".main-nav").on('click', '[href*="#"]', function (e) {
+    var fixed_offset = -2;
+    $('html,body').stop().animate({scrollTop: $(this.hash).offset().top - fixed_offset}, 1000);
+    e.preventDefault();
+  });
+
+  $('input[type="tel"]').mask("+7(999) 999-9999", {});
+
 });

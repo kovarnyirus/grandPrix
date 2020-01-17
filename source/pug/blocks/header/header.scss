@@ -1,21 +1,25 @@
-.footer{
-  padding-bottom: 60px;
-  margin-top: -30px;
-  &__wrapper{
+.header {
+  &__wrapper {
+    padding-top: 23px;
     display: flex;
-    flex-direction: column;
-  }
-  &__logo-wrapper{
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 19px;
-  }
-  &__contacts{
-    display: flex;
-    flex-direction: column;
     align-items: center;
   }
-  &__phone{
+
+  &__logo-link {
+    order: 2;
+    padding-left: 20px;
+    min-width: 122px;
+    margin-top: 3px;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    order: 3;
+  }
+
+  &__tel {
     font-family: AGAvalancheC;
     font-style: normal;
     font-weight: normal;
@@ -23,21 +27,19 @@
     line-height: 17px;
     text-align: right;
     color: #FFFFFF;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
   }
-  &__callback{
-    font-family: AGAvalancheC;
-    font-style: normal;
-    font-weight: normal;
+
+  &__callback {
+    color: $accent-color;
     font-size: 8px;
     line-height: 10px;
     text-align: right;
     text-transform: uppercase;
-    color: $accent-color;
-    padding-bottom: 3px;
+    padding-bottom: 4px;
     border-bottom: 1px dashed $accent-color;
-    transition: .2s;
     opacity: .7;
+    transition: .2s;
     &:hover{
       text-decoration: none;
       outline: none;

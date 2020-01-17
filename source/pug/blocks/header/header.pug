@@ -1,0 +1,10 @@
+include ../main-nav/main-nav
+mixin header()
+	+b.HEADER.header
+		+e.wrapper.container
+			+e.A.logo-link
+				+e.IMG.logo(src='img/logo.svg' width='102px')
+			+main-nav()
+			+e.contacts
+				+e.A.tel(href='tel:88001234567') 8 800 123 45 67
+				+e.A.callback(href='#callback') Заказать обратный звонок
