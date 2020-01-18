@@ -1,17 +1,31 @@
 .team {
   margin-bottom: 140px;
-  &__wrapper {
 
+  .slick-track,
+  .slick-list {
+    overflow: visible;
   }
 
-  &__title {
-
-  }
   @include media-breakpoint-up(md){
     &__title{
       text-align: center;
       margin-bottom: 50px;
     }
+  }
+
+  @include media-breakpoint-up(md){
+    &__title{
+      font-size: 50px;
+      line-height: 62px;
+      margin-bottom: 75px;
+    }
+    .slick-track,
+    .slick-list {
+      overflow: visible;
+    }
+  }
+  @include media-breakpoint-up(xl){
+    margin-bottom: 224px;
   }
 }
 
@@ -61,5 +75,30 @@
     line-height: 160%;
     text-align: center;
     color: $accent-color;
+  }
+  @include media-breakpoint-up(md){
+    &__item{
+      width: 387px;
+    }
+  }
+  @include media-breakpoint-up(xl){
+    &__img-wrapper{
+      margin-bottom: 26px;
+    }
+    &__name {
+      font-size: 24px;
+      line-height: 160%;
+      margin-bottom: 8px;
+    }
+    &__post{
+      font-size: 16px;
+      line-height: 160%;
+      font-style: italic;
+      margin-bottom: 8px;
+    }
+    &__pet{
+      font-size: 18px;
+      line-height: 160%;
+    }
   }
 }

@@ -57,4 +57,53 @@
       font-size: 14px;
     }
   }
+  @include media-breakpoint-up(xl){
+    margin-bottom: 168px;
+    position: relative;
+    &:before{
+      position: absolute;
+      display: block;
+      content: '';
+      width: 1160px;
+      height: 1124px;
+      background-image:url("../img/dog.png");
+      right: 49.5%;
+      top: 50%;
+      transform: translate(-42%, -18%);
+      z-index: -1;
+    }
+    &:after{
+      position: absolute;
+      display: block;
+      content: '';
+      width: 1259px;
+      height: 1259px;
+      background-image:url("../img/cat.png");
+      left: 50%;
+      top: 50%;
+      transform: translate(19%, -95%);
+      z-index: -1;
+    }
+    &__title{
+      max-width: 1046px;
+      margin-bottom: 114px;
+    }
+    &__list{
+      margin-bottom: 100px;
+    }
+    &__item{
+      width: 590px;
+      margin-bottom: 133px;
+    }
+    &__item-number{
+      font-size: 100px;
+      line-height: 180%;
+      margin-bottom: 0;
+      color: #FFD45A;;
+    }
+    &__item-text{
+      font-size: 24px;
+      line-height: 180%;
+    }
+  }
 }

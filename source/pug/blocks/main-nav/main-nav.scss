@@ -146,4 +146,10 @@
       }
     }
   }
+  @include media-breakpoint-up(md) {
+    &__link{
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
 }

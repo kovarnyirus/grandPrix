@@ -1,13 +1,47 @@
 'use strict';
 $( document ).ready(function() {
 
+  let sliderBtnPrev = '<button class="slider__btn-prev slick-arrow">\n' +
+    '          <svg class="icon icon-prev">\n' +
+    '            <use xlink:href="../img/svg/sprite.svg#icon-prev"></use>\n' +
+    '          </svg>\n' +
+    '        </button>';
+  let sliderBtnNext = '<button class="slider__btn-next slick-arrow">\n' +
+    '          <svg class="icon icon-next">\n' +
+    '            <use xlink:href="../img/svg/sprite.svg#icon-next"></use>\n' +
+    '          </svg>\n' +
+    '        </button>';
+
+  let sliderTeamBtnPrev = '<button class="slider__btn-prev slider__btn-prev--team slick-arrow">\n' +
+    '          <svg class="icon icon-prev">\n' +
+    '            <use xlink:href="../img/svg/sprite.svg#icon-prev"></use>\n' +
+    '          </svg>\n' +
+    '        </button>';
+  let sliderTeamBtnNext = '<button class="slider__btn-next slider__btn-next--team slick-arrow">\n' +
+    '          <svg class="icon icon-next">\n' +
+    '            <use xlink:href="../img/svg/sprite.svg#icon-next"></use>\n' +
+    '          </svg>\n' +
+    '        </button>';
+
   $('.team-gallery').slick({
     centerMode: true,
     centerPadding: '60px',
     slidesToShow: 3,
     rows: 0,
     dots: true,
+    prevArrow: sliderTeamBtnPrev,
+    nextArrow: sliderTeamBtnNext,
     responsive: [
+      {
+        breakpoint: 9999999,
+        settings: {
+          arrows: true,
+          centerMode: false,
+          centerPadding: '40px',
+          infinite: true,
+          slidesToShow: 3
+        }
+      },
       {
         breakpoint: 1024,
         settings: {
@@ -28,7 +62,7 @@ $( document ).ready(function() {
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 767,
         settings: {
           arrows: false,
           centerMode: true,
@@ -45,7 +79,19 @@ $( document ).ready(function() {
     slidesToShow: 3,
     rows: 0,
     dots: true,
+    prevArrow: sliderBtnPrev,
+    nextArrow: sliderBtnNext,
     responsive: [
+      {
+        breakpoint: 99999,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '40px',
+          infinite: true,
+          slidesToShow: 3
+        }
+      },
       {
         breakpoint: 1024,
         settings: {
@@ -79,11 +125,23 @@ $( document ).ready(function() {
 
   $('.reviews__list').slick({
     centerMode: true,
-    centerPadding: '60px',
+    centerPadding: '20px',
     slidesToShow: 2,
     rows: 0,
     dots: true,
+    prevArrow: sliderBtnPrev,
+    nextArrow: sliderBtnNext,
     responsive: [
+      {
+        breakpoint: 999999,
+        settings: {
+          arrows: true,
+          centerMode: false,
+          centerPadding: '40px',
+          infinite: true,
+          slidesToShow: 2
+        }
+      },
       {
         breakpoint: 1024,
         settings: {
@@ -100,11 +158,11 @@ $( document ).ready(function() {
           arrows: false,
           centerMode: true,
           centerPadding: '40px',
-          slidesToShow: 3
+          slidesToShow: 1
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 767,
         settings: {
           arrows: false,
           centerMode: true,

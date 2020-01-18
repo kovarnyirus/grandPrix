@@ -19,6 +19,10 @@
     padding-right: 14px;
     padding-bottom: 22px;
     margin-bottom: 30px;
+    opacity: .8;
+    &.slick-active{
+      opacity: 1;
+    }
   }
 
   &__avatar-wrapper {
@@ -58,6 +62,11 @@
     color: #000000;
   }
 
+  .slick-track,
+  .slick-list {
+    overflow: visible;
+  }
+
   @include media-breakpoint-up(md) {
     &__title {
       text-align: center;
@@ -71,8 +80,39 @@
       padding-right: 20px;
       margin-bottom: 0px;
     }
-    &__name{
+    &__name {
       padding-top: 10px;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 100px;
+    &__title {
+      margin-bottom: 95px;
+    }
+    &__item{
+      padding-top: 44px;
+      padding-left: 61px;
+      padding-right: 42px;
+      padding-bottom: 45px;
+    }
+    &__avatar-wrapper {
+      padding-right: 35px;
+    }
+    &__avatar {
+      width: 83px;
+    }
+    &__name {
+      font-size: 20px;
+      line-height: 160%;
+      margin-bottom: 0;
+    }
+    &__post {
+      font-size: 14px;
+      line-height: 160%;
+    }
+    p{
+      font-size: 14px;
+      line-height: 160%;
     }
   }
 }

@@ -64,13 +64,27 @@
     &__logo-wrapper{
       margin-left: 0;
       margin-right: 0;
-      width: 122px;
+      min-width: 122px;
     }
     &__logo{
       width: 122px;
     }
     &__contacts{
       align-items: flex-end;
+    }
+  }
+  @include media-breakpoint-up(md){
+    padding-bottom: 54px;
+    &__logo{
+      width: 282px;
+    }
+    &__phone{
+      font-size: 22px;
+      line-height: 26px;
+    }
+    &__callback{
+      font-size: 12px;
+      line-height: 14px;
     }
   }
 }

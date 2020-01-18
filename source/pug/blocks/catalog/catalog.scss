@@ -53,8 +53,6 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 15px;
-    padding-right: 15px;
     justify-content: space-between;
   }
 
@@ -128,6 +126,55 @@
     }
     &__btn{
       font-size: 12px;
+    }
+  }
+  @include media-breakpoint-up(xl){
+    margin-bottom: 60px;
+    &__title{
+      line-height: 62px;
+      margin-bottom: 97px;
+    }
+    &__head-list{
+      max-width: 426px;
+      justify-content: space-around;
+    }
+    &__head-item{
+      font-size: 24px;
+      line-height: 30px;
+    }
+    &__list{
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &__item{
+      width: 387px;
+      padding-top: 34px;
+      padding-left: 33px;
+      padding-right: 30px;
+      padding-bottom: 42px;
+      margin-bottom: 22px;
+    }
+    &__img{
+      width: 230px;
+    }
+    &__img-wrapper{
+      margin-bottom: 8px;
+    }
+    &__name{
+      font-size: 18px;
+      line-height: 160%;
+      margin-bottom: 65px;
+      min-height: 88px;
+    }
+    &__more{
+      font-size: 16px;
+      line-height: 146%;
+      margin-bottom: 23px;
+    }
+    &__btn{
+      margin-top: 23px;
+      font-size: 16px;
+      line-height: 146%;
     }
   }
 }

@@ -8,8 +8,8 @@ mixin input-phone(id)
 		+icon('phone')
 	+e.INPUT.input(type='tel' id='phone' + id)
 
-mixin act(id)
-	+b.SECTION.act
+mixin act(id, className)
+	+b.SECTION.act(class= className)
 		+e.wrapper.container
 			+e.pets-wrapper
 				+e.IMG.pets(src='img/header-pet.png')

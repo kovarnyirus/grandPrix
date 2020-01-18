@@ -41,8 +41,12 @@ h2 {
   color: #FFFFFF;
   margin-bottom: 30px;
   text-align: center;
-  @include media-breakpoint-up(md){
+  @include media-breakpoint-up(md) {
     font-size: 34px;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 50px;
+    line-height: 150%;
   }
 }
 
@@ -54,6 +58,10 @@ h4 {
   line-height: 25px;
   text-align: center;
   color: #FFFFFF;
+  @include media-breakpoint-up(xl){
+    font-size: 34px;
+    line-height: 130%;
+  }
 }
 
 ul {
@@ -139,6 +147,11 @@ a {
 
   @include media-breakpoint-up(md) {
     height: 50px;
+  }
+  @include media-breakpoint-up(md) {
+    height: 68px;
+    font-size: 16px;
+    line-height: 146%;
   }
 }
 
@@ -245,7 +258,8 @@ a {
       font-size: 13px;
       height: 50px;
       line-height: 1;
-      &::placeholder{
+
+      &::placeholder {
         font-size: 13px;
       }
     }
@@ -258,12 +272,41 @@ a {
       width: 30%;
       margin: 0;
     }
-    &__agreement{
+    &__agreement {
       margin-top: 35px;
       width: 100%;
       text-align: center;
       font-size: 12px;
       line-height: 14px;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    &__title {
+      font-size: 30px;
+      line-height: 37px;
+      margin-bottom: 33px;
+    }
+    &__input {
+      font-size: 16px;
+      line-height: 146%;
+      height: 68px;
+      &::placeholder{
+        font-size: 16px;
+        line-height: 65px;
+        position: absolute;
+      }
+    }
+    &__label {
+      height: 68px;
+    }
+    &__item {
+      width: 384px;
+    }
+    &__btn {
+      width: 384px;
+      height: 68px;
+      font-size: 16px;
+      line-height: 146%;
     }
   }
 }
@@ -282,8 +325,70 @@ a {
   opacity: 1;
 }
 
+.slider__btn-prev,
+.slider__btn-next{
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 20px rgba(255, 212, 90, 0.5);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .2s;
+  z-index: 2;
+  top: 50%;
+  &:hover{
+    outline: none;
+    background-color: #FFD45A;
+    box-shadow: none;
+  }
+  &:active{
+    background-color: #FFE290;
+    box-shadow: none;
+    outline: none;
+  }
+  &:focus{
+    outline: none;
+  }
+  .icon{
+    width: 5px;
+    height: 10px;
+    fill: white;
+  }
+  &--team{
+    top: 35%;
+  }
+}
+
+.slider__btn-prev{
+  left: 0;
+  transform: translate(-100%, -50%);
+}
+
+.slider__btn-next{
+  right: 0;
+  transform: translate(100%, -50%);
+}
+
 @include media-breakpoint-up(md) {
   .container {
     max-width: 768px;
   }
 }
+
+@include media-breakpoint-up(xl) {
+  .container {
+    max-width: 1260px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .slick-dots{
+    bottom: -88px;
+  }
+}
+

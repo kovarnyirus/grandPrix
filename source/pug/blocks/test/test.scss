@@ -12,6 +12,8 @@
     padding-right: 15px;
     padding-top: 30px;
     padding-bottom: 27px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__img-wrapper {
@@ -50,6 +52,33 @@
   @include media-breakpoint-up(md){
     &__wrapper{
       max-width: 996px;
+    }
+  }
+  @include media-breakpoint-up(xl){
+    margin-bottom: 288px;
+    &__wrapper{
+      max-width: 996px;
+      padding-left: 81px;
+      padding-right: 80px;
+      padding-top: 71px;
+      position: relative;
+    }
+    &__title {
+      font-size: 34px;
+      line-height: 130%;
+      text-align: left;
+    }
+    &__btn{
+      width: 210px;
+      margin-left: 0;
+      font-size: 16px;
+      line-height: 146%;
+    }
+    &__img-wrapper{
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 81px;
     }
   }
 }

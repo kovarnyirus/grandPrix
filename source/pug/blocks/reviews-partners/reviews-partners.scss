@@ -12,4 +12,24 @@
       opacity: 1;
     }
   }
+  .slick-track,
+  .slick-list {
+    overflow: visible;
+  }
+  @include media-breakpoint-up(xl){
+    padding-top: 93px;
+    background: linear-gradient(180deg, #121212 0%, #2E3042 100%);
+    margin-bottom: 312px;
+    &__title{
+      font-size: 50px;
+      line-height: 62px;
+      margin-bottom: 109px;
+    }
+    &__item{
+      margin-bottom: 0;
+    }
+    .slick-dots{
+      bottom: -88px;
+    }
+  }
 }
