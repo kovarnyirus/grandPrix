@@ -13,6 +13,7 @@
     <script defer type="text/javascript" src="js/jQuery.js"></script>
     <script defer type="text/javascript" src="js/slick.js"></script>
     <script defer type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+    <script defer type="text/javascript" src="js/jquery.magnific-popup.js"></script>
     <script defer type="text/javascript" src="js/main.js"></script>
   </head>
   <body>
@@ -34,7 +35,7 @@
             </li>
           </ul>
         </nav>
-        <div class="header__contacts"><a class="header__tel" href="tel:88001234567">8 800 123 45 67</a><a class="header__callback" href="#callback">Заказать обратный звонок</a>
+        <div class="header__contacts"><a class="header__tel" href="tel:88001234567">8 800 123 45 67</a><a class="header__callback popup-with-form" href="#popup-callback">Заказать обратный звонок</a>
         </div>
       </div>
     </header>
@@ -229,33 +230,83 @@
             </div>
           </div>
           <div class="team-gallery__item">
-            <div class="team-gallery__img-wrapper"><img class="team-gallery__img" src="img/team/team-1.jpg" alt="team-1" title=""/>
+            <div class="team-gallery__img-wrapper"><img class="team-gallery__img" src="img/team/team-4.jpg" alt="team-4" title=""/>
             </div>
-            <h5 class="team-gallery__name">Анна Андрианова
-            </h5>
-            <div class="team-gallery__post">Менеджер по работе с ключевыми клиентами
-            </div>
-            <div class="team-gallery__pet">Питомец: Пес Бамси
-            </div>
-          </div>
-          <div class="team-gallery__item">
-            <div class="team-gallery__img-wrapper"><img class="team-gallery__img" src="img/team/team-2.jpg" alt="team-2" title=""/>
-            </div>
-            <h5 class="team-gallery__name">Вячеслав Пономарев
-            </h5>
-            <div class="team-gallery__post">Менеджер по продажам
-            </div>
-            <div class="team-gallery__pet">Питомец: Кот Бонифаций
-            </div>
-          </div>
-          <div class="team-gallery__item">
-            <div class="team-gallery__img-wrapper"><img class="team-gallery__img" src="img/team/team-3.jpg" alt="team-3" title=""/>
-            </div>
-            <h5 class="team-gallery__name">Павел Юшков
+            <h5 class="team-gallery__name">Виктор Аржаев
             </h5>
             <div class="team-gallery__post">Менеджер по продажам
             </div>
             <div class="team-gallery__pet">Питомец: Кошка Ося
+            </div>
+          </div>
+          <div class="team-gallery__item">
+            <div class="team-gallery__img-wrapper"><img class="team-gallery__img" src="img/team/team-5.jpg" alt="team-5" title=""/>
+            </div>
+            <h5 class="team-gallery__name">Елизавета Смирнова
+            </h5>
+            <div class="team-gallery__post">Менеджер по продажам
+            </div>
+            <div class="team-gallery__pet">Питомец: Кот Степан
+            </div>
+          </div>
+          <div class="team-gallery__item">
+            <div class="team-gallery__img-wrapper"><img class="team-gallery__img" src="img/team/team-6.jpg" alt="team-6" title=""/>
+            </div>
+            <h5 class="team-gallery__name">Николай Рябиков
+            </h5>
+            <div class="team-gallery__post">Супервайзер
+            </div>
+            <div class="team-gallery__pet">Питомец: Собака Лэсси
+            </div>
+          </div>
+          <div class="team-gallery__item">
+            <div class="team-gallery__img-wrapper"><img class="team-gallery__img" src="img/team/team-7.jpg" alt="team-7" title=""/>
+            </div>
+            <h5 class="team-gallery__name">Елена Астахова
+            </h5>
+            <div class="team-gallery__post">Менеджер по продажам
+            </div>
+            <div class="team-gallery__pet">Питомец: Пес Тэди
+            </div>
+          </div>
+          <div class="team-gallery__item">
+            <div class="team-gallery__img-wrapper"><img class="team-gallery__img" src="img/team/team-8.jpg" alt="team-8" title=""/>
+            </div>
+            <h5 class="team-gallery__name">Алевтина Матросова
+            </h5>
+            <div class="team-gallery__post">
+            </div>
+            <div class="team-gallery__pet">Питомец: Кот Маркиз
+            </div>
+          </div>
+          <div class="team-gallery__item">
+            <div class="team-gallery__img-wrapper"><img class="team-gallery__img" src="img/team/team-9.jpg" alt="team-9" title=""/>
+            </div>
+            <h5 class="team-gallery__name">Екатерина Хайрулина
+            </h5>
+            <div class="team-gallery__post">
+            </div>
+            <div class="team-gallery__pet">Питомец: Кошка Кася
+            </div>
+          </div>
+          <div class="team-gallery__item">
+            <div class="team-gallery__img-wrapper"><img class="team-gallery__img" src="img/team/team-10.jpg" alt="team-10" title=""/>
+            </div>
+            <h5 class="team-gallery__name">Юлия Сухова
+            </h5>
+            <div class="team-gallery__post">
+            </div>
+            <div class="team-gallery__pet">Питомец: Пес Зигги
+            </div>
+          </div>
+          <div class="team-gallery__item">
+            <div class="team-gallery__img-wrapper"><img class="team-gallery__img" src="img/team/team-11.jpg" alt="team-11" title=""/>
+            </div>
+            <h5 class="team-gallery__name">Александра Вольфовская
+            </h5>
+            <div class="team-gallery__post">
+            </div>
+            <div class="team-gallery__pet">Питомец: Пес Алекс
             </div>
           </div>
         </div>
@@ -370,58 +421,58 @@
         <div class="reviews__list">
           <div class="reviews__item">
             <div class="reviews__item-top">
-              <div class="reviews__avatar-wrapper"><img class="reviews__avatar" src="img/userAvatars/avatar-1.png" alt="reviews-1" title=""/>
+              <div class="reviews__avatar-wrapper"><img class="reviews__avatar" src="img/userAvatars/avatar-2.png" alt="reviews-2" title=""/>
               </div>
-              <div class="reviews__name">Алина Алинова
+              <div class="reviews__name">Елизавета
               </div>
-              <div class="reviews__post">генеральный директор компании AAA
+              <div class="reviews__post">Заводчик шпицев
               </div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Один из лучших кормов для меленьких песиков! Шпицы очень привередливые собаки, они едят далеко не все корма, а от некоторых начинаю болеть: у них портится шерсть, пропадает свойственна игривость и появляться риск развития хронических заболеваний. GRAND PRIX подошёл для моих собачек идеально. Для малышей я беру Small Junior, для моих 4-х песелей — Lamb and Rice. Еще иногда балую их суфле с телятиной и овощами. Все сметают подчистую и всегда просят ещё))</p>
           </div>
           <div class="reviews__item">
             <div class="reviews__item-top">
-              <div class="reviews__avatar-wrapper"><img class="reviews__avatar" src="img/userAvatars/avatar-1.png" alt="reviews-1" title=""/>
+              <div class="reviews__avatar-wrapper"><img class="reviews__avatar" src="img/userAvatars/avatar-2.png" alt="reviews-2" title=""/>
               </div>
-              <div class="reviews__name">Алина Алинова
+              <div class="reviews__name">Иван Станиславович
               </div>
-              <div class="reviews__post">генеральный директор компании AAA
+              <div class="reviews__post">Кошатник
               </div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>У меня домы живут 5 кошек, все подобраны с улицы и приняты в семью) К сожалению. каждого котенка пришлось лечить от каких-либо болезней. И именно период лечения обычно был самый сложный: надо соблюдать диету и при этом следить за достаточным количеством витаминов и микроэлементов. Когда мы подобрали четвертого котёнка, ветеринар посоветовал GRAND PRIX, я сперва отнесся скептически, так как всю жизнь кормил своих животных только натуралкой, но Тоффи обычную еду есть на могла (у нее были повреждены внутренние органы). И сбалансированный сухой корм стал единственным вариантом. А пока она так питалась, остальные коты тоже оценили корм. Так и перешли все на сухой рацион. Уже три года мои бандиты питаются только кормами этой марки и никаких проблем: ни одной внезапной болячки, шерсть всегда мягкая и пушистая, а мои коты — веселые и игривые. Да и мне больше не надо им готовить и просчитывать сбалансированный рацион. В общем, я рад что перевёл их на GRAND PRIX.</p>
           </div>
           <div class="reviews__item">
             <div class="reviews__item-top">
-              <div class="reviews__avatar-wrapper"><img class="reviews__avatar" src="img/userAvatars/avatar-1.png" alt="reviews-1" title=""/>
+              <div class="reviews__avatar-wrapper"><img class="reviews__avatar" src="img/userAvatars/avatar-2.png" alt="reviews-2" title=""/>
               </div>
-              <div class="reviews__name">Алина Алинова
+              <div class="reviews__name">Зоя Яковлевна
               </div>
-              <div class="reviews__post">генеральный директор компании AAA
+              <div class="reviews__post">Владелица лабрадора
               </div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>По совету ветеринара периодически меняем корм нашей собаке. После перехода на GRAND PRIX сразу заметили разницу. Первое, что меня приятно удивило, — это состав корма: высокое содержание мяса, клетчатка и масса витаминов, и абсолютно никакой химии. Второе — это поведение нашего Арчи. Ему уже 11 лет, но после изменения рациона он стал бегать как юнец)) Такой неуемной энергии я в нем не замечала последние лет пять. По собственному опыту рекомендую LARGE ADULT для крупных собак любого возраста. Уверена, что с ним пес даже весьма «почтенного возраста» снова начнет вести себя как энергичный «подросток»))</p>
           </div>
           <div class="reviews__item">
             <div class="reviews__item-top">
-              <div class="reviews__avatar-wrapper"><img class="reviews__avatar" src="img/userAvatars/avatar-1.png" alt="reviews-1" title=""/>
+              <div class="reviews__avatar-wrapper"><img class="reviews__avatar" src="img/userAvatars/avatar-2.png" alt="reviews-2" title=""/>
               </div>
-              <div class="reviews__name">Алина Алинова
+              <div class="reviews__name">Зарина
               </div>
-              <div class="reviews__post">генеральный директор компании AAA
+              <div class="reviews__post">Владелица мейн-куна
               </div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>После появления в нашем доме мейн-куна забот ощутимо добавилось. Среди прочего встал вопрос, чем же кормить кота. Почитав форумы и посоветовавшись с заводчиками, решила остановиться на продукции GRAND PRIX, а именно сухом корме для котят KITTEN с лососем. Не знаю, сколько именно мяса содержиться в корме, но котенок есть его с огромным аппетитом, выглядит абсолютно здоровым и жизнерадостным, расстройств пищеварения никаких не наблюдается. Я довольна выбором и пробовать другой корм или корректировать рацион пока не собираюсь. Когда котенок подрастет планирую перевести его на GRAND PRIX ORIGINAL, в составе которого также есть лосось и жирные кислоты омега-3 и омега-6.</p>
           </div>
           <div class="reviews__item">
             <div class="reviews__item-top">
-              <div class="reviews__avatar-wrapper"><img class="reviews__avatar" src="img/userAvatars/avatar-1.png" alt="reviews-1" title=""/>
+              <div class="reviews__avatar-wrapper"><img class="reviews__avatar" src="img/userAvatars/avatar-2.png" alt="reviews-2" title=""/>
               </div>
-              <div class="reviews__name">Алина Алинова
+              <div class="reviews__name">Станислав Игнатенко
               </div>
-              <div class="reviews__post">генеральный директор компании AAA
+              <div class="reviews__post">Владелец 3-х кошек и 2-х собак
               </div>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Полтора года назад решил перевести своих питомцев с натурального кормления на сухой рацион. Сперва взял несколько разных марок корма и посмотрел, что моим питомцам больше по вкусу. После нескольких экспериментов остановил выбор на GRAND PRIX. Псы у меня очень похожи: небольшие и совершенно не породистые. Для них я беру MEDIUM ADULT в фасовке по 12 кг. Для двух собак одного пакета хватает примерно на 5-6 недель. Для кошек — STERILIZED и ORIGINAL, обычно мешаю 1:1. В среднем в месяц каждая кошка съедает примерно по 1,5 кг корма. то есть 4 пакета хватает на те же 5-6 недель. Все животные в прекрасной форме, с пищеварение и мочеполовой системой у них все в порядке. Да и цена у корма не сильно «кусачая». Своим выбором я пока полностью доволен.</p>
           </div>
         </div>
       </div>
@@ -475,9 +526,35 @@
       <div class="footer__wrapper container">
         <div class="footer__logo-wrapper"><img class="footer__logo" src="img/logo.svg" width="102" alt="" role="presentation"/>
         </div>
-        <div class="footer__contacts"><a class="footer__phone" src="tel:88001234567">8 800 123 45 67</a><a class="footer__callback" href="#callback">Заказать обратный звонок</a>
+        <div class="footer__contacts"><a class="footer__phone" src="tel:88001234567">8 800 123 45 67</a><a class="footer__callback popup-with-form" href="#popup-callback">Заказать обратный звонок</a>
         </div>
       </div>
     </footer>
+    <div class="popup-callback mfp-hide white-popup-block" id="popup-callback">
+      <form>
+        <div class="popup-callback__wrapper">
+          <h5 class="popup-callback__title">форма обратной связи
+          </h5>
+          <div class="popup-callback__item">
+            <label class="popup-callback__label" for="mailundefined">
+              <svg class="icon icon-mail ">
+                <use xlink:href="img/svg/sprite.svg#icon-mail"></use>
+              </svg>
+            </label><input class="popup-callback__input" type="email" placeholder="Введите Ваш e-mail" id="mailundefined"/>
+          </div>
+          <div class="popup-callback__item">
+            <label class="popup-callback__label popup-callback__label--phone" for="phoneundefined">
+              <svg class="icon icon-phone ">
+                <use xlink:href="img/svg/sprite.svg#icon-phone"></use>
+              </svg>
+            </label><input class="popup-callback__input" type="tel" id="phoneundefined"/>
+          </div>
+          <button class="popup-callback__btn btn">Отправить
+          </button>
+          <p class="popup-callback__agreement">Нажимая на кнопку, Вы соглашаетесь с условиями политики конфиденциальности
+          </p>
+        </div>
+      </form>
+    </div>
   </body>
 </html>

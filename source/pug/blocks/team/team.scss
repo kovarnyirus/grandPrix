@@ -76,6 +76,9 @@
     text-align: center;
     color: $accent-color;
   }
+  &__img{
+    width: 100%;
+  }
   @include media-breakpoint-up(md){
     &__item{
       width: 387px;

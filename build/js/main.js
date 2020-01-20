@@ -24,7 +24,7 @@ $( document ).ready(function() {
     '        </button>';
 
   $('.team-gallery').slick({
-    centerMode: true,
+    centerMode: false,
     centerPadding: '60px',
     slidesToShow: 3,
     rows: 0,
@@ -47,17 +47,8 @@ $( document ).ready(function() {
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: '40px',
+          centerPadding: '20px',
           infinite: true,
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
           slidesToShow: 3
         }
       },
@@ -66,7 +57,7 @@ $( document ).ready(function() {
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: '40px',
+          centerPadding: '15px',
           slidesToShow: 1
         }
       }
@@ -86,7 +77,7 @@ $( document ).ready(function() {
         breakpoint: 99999,
         settings: {
           arrows: true,
-          centerMode: true,
+          centerMode: false,
           centerPadding: '40px',
           infinite: true,
           slidesToShow: 3
@@ -96,8 +87,8 @@ $( document ).ready(function() {
         breakpoint: 1024,
         settings: {
           arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
+          centerMode: false,
+          centerPadding: '20px',
           infinite: true,
           slidesToShow: 3
         }
@@ -106,9 +97,9 @@ $( document ).ready(function() {
         breakpoint: 768,
         settings: {
           arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3
+          centerMode: false,
+          centerPadding: '20px',
+          slidesToShow: 2
         }
       },
       {
@@ -116,7 +107,7 @@ $( document ).ready(function() {
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: '40px',
+          centerPadding: '15px',
           slidesToShow: 1
         }
       }
@@ -146,7 +137,7 @@ $( document ).ready(function() {
         breakpoint: 1024,
         settings: {
           arrows: false,
-          centerMode: true,
+          centerMode: false,
           centerPadding: '40px',
           infinite: true,
           slidesToShow: 2
@@ -156,7 +147,7 @@ $( document ).ready(function() {
         breakpoint: 768,
         settings: {
           arrows: false,
-          centerMode: true,
+          centerMode: false,
           centerPadding: '40px',
           slidesToShow: 1
         }
@@ -166,7 +157,7 @@ $( document ).ready(function() {
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: '40px',
+          centerPadding: '15px',
           slidesToShow: 1
         }
       }
@@ -193,5 +184,10 @@ $( document ).ready(function() {
   });
 
   $('input[type="tel"]').mask("+7(999) 999-9999", {});
+
+  $('.popup-with-form').magnificPopup({
+    type: 'inline',
+    preloader: false,
+  });
 
 });

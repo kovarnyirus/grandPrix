@@ -1,0 +1,99 @@
+.popup-callback {
+  background-color: white;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__title{
+    color: black;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__item {
+    display: flex;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  &__label {
+    height: 68px;
+    min-width: 72px;
+    width: 20%;
+    background-color: white;
+    margin-bottom: 0;
+    box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 12px 0px 0px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--phone {
+      background: linear-gradient(180deg, #FFE887 0%, #FFBB22 100%);
+      box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .icon-mail {
+      width: 17px;
+      height: 13px;
+    }
+
+    .icon-phone {
+      width: 11px;
+      height: 20px;
+    }
+  }
+
+  &__input {
+    outline: none;
+
+    max-width: 100%;
+    width: 100%;
+    display: inline-flex;
+    display: flex;
+    align-items: center;
+    height: 68px;
+    border: none;
+    border-radius: 0px 12px 12px 0px;
+    background-color: #EDEDED;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    line-height: 1;
+
+    &::placeholder {
+      color: #000000;
+      opacity: .5;
+      font-size: 16px;
+    }
+  }
+
+  &__btn {
+    font-family: AGAvalancheC;
+    width: 100%;
+    margin-bottom: 15px;
+    height: 68px;
+  }
+
+  &__agreement {
+    font-family: AGAvalancheC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #000000;
+  }
+}

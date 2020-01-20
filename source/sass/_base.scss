@@ -148,7 +148,7 @@ a {
   @include media-breakpoint-up(md) {
     height: 50px;
   }
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(xl) {
     height: 68px;
     font-size: 16px;
     line-height: 146%;

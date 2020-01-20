@@ -1,0 +1,11 @@
+mixin modal()
+	+b.popup-callback#popup-callback.mfp-hide.white-popup-block
+		form
+			+e.wrapper
+				+e.H5.title форма обратной связи
+				+e.item
+					+input-mail(id)
+				+e.item
+					+input-phone(id)
+				+e.BUTTON.btn.btn Отправить
+				+e.P.agreement Нажимая на кнопку, Вы соглашаетесь с условиями политики конфиденциальности

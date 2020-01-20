@@ -1,5 +1,7 @@
 @import "../libs/slick/slick-theme.scss";
 @import "../libs/slick/slick.scss";
+@import "../libs/magnific-popup/src/css/_settings.scss";
+@import "../libs/magnific-popup/src/css/main.scss";
 @import "bootstrap/bootstrap";
 @import "fonts";
 @import "vars";
@@ -16,3 +18,4 @@
 @import "../pug/blocks/reviews-partners/reviews-partners";
 @import "../pug/blocks/reviews/reviews";
 @import "../pug/blocks/footer/footer";
+@import "../pug/blocks/modal/modal";
