@@ -1,5 +1,6 @@
 .advantages {
   margin-bottom: 113px;
+
   &__wrapper {
 
   }
@@ -10,7 +11,8 @@
 
   &__item {
     margin-bottom: 37px;
-    &:last-child{
+
+    &:last-child {
       margin-bottom: 78px;
     }
   }
@@ -35,75 +37,79 @@
   }
 
 
-
-  @include media-breakpoint-up(md){
-    &__title{
+  @include media-breakpoint-up(md) {
+    &__title {
       text-align: left;
     }
-    &__list{
+    &__list {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
     }
-    &__item{
+    &__item {
       width: 48%;
       margin-bottom: 40px;
     }
-    &__item-number{
+    &__item-number {
       font-size: 50px;
       margin-bottom: 15px;
     }
-    &__item-text{
+    &__item-text {
       font-size: 14px;
     }
   }
-  @include media-breakpoint-up(xl){
+  @include media-breakpoint-up(xl) {
     margin-bottom: 168px;
     position: relative;
-    &:before{
+    transform: scale(.8);
+    &:before {
       position: absolute;
       display: block;
       content: '';
       width: 1160px;
       height: 1124px;
-      background-image:url("../img/dog.png");
+      background-image: url("../img/dog.png");
       right: 49.5%;
       top: 50%;
       transform: translate(-42%, -18%);
       z-index: -1;
     }
-    &:after{
+    &:after {
       position: absolute;
       display: block;
       content: '';
       width: 1259px;
       height: 1259px;
-      background-image:url("../img/cat.png");
+      background-image: url("../img/cat.png");
       left: 50%;
       top: 50%;
       transform: translate(19%, -95%);
       z-index: -1;
     }
-    &__title{
+    &__title {
       max-width: 1046px;
       margin-bottom: 114px;
     }
-    &__list{
+    &__list {
       margin-bottom: 100px;
     }
-    &__item{
+    &__item {
       width: 590px;
       margin-bottom: 133px;
     }
-    &__item-number{
+    &__item-number {
       font-size: 100px;
       line-height: 180%;
       margin-bottom: 0;
       color: #FFD45A;;
     }
-    &__item-text{
+    &__item-text {
       font-size: 24px;
       line-height: 180%;
     }
+  }
+
+  @include media-breakpoint-up(xxl) {
+    transform: scale(1);
   }
 }
