@@ -59,7 +59,8 @@
     }
   }
   @include media-breakpoint-up(xl) {
-    margin-bottom: 168px;
+    margin-bottom: -30px;
+    margin-top: -220px;
     position: relative;
     transform: scale(.8);
     &:before {
@@ -111,5 +112,7 @@
 
   @include media-breakpoint-up(xxl) {
     transform: scale(1);
+    margin-top: 0;
+    margin-bottom: 168px;
   }
 }
