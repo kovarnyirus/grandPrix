@@ -5,7 +5,7 @@ mixin catalogItem(img, title, description, className)
 		+e.H5.name=  title
 		+e.A.more.popup-with-move-anim(href= '#' + className)  Подробнее
 		+e.description(id= className class="zoom-anim-dialog mfp-hide")= description
-		+e.BUTTON.btn.btn Узнать цену
+		+e.A.btn.btn.popup-with-form(href='#popup-price') Узнать цену
 
 mixin catalog()
 	+b.SECTION.catalog#catalog

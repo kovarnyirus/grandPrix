@@ -9,3 +9,14 @@ mixin modal()
 					+input-phone(id)
 				+e.BUTTON.btn.btn Отправить
 				+e.P.agreement Нажимая на кнопку, Вы соглашаетесь с условиями политики конфиденциальности
+
+	+b.popup-callback#popup-price.mfp-hide.white-popup-block
+		form
+			+e.wrapper
+				+e.H5.title Получить прайс-лист
+				+e.item
+					+input-mail(++id)
+				+e.item
+					+input-phone(++id)
+				+e.BUTTON.btn.btn Отправить
+				+e.P.agreement Нажимая на кнопку, Вы соглашаетесь с условиями политики конфиденциальности
