@@ -1,5 +1,5 @@
 'use strict';
-$( document ).ready(function() {
+$(document).ready(function () {
 
   let sliderBtnPrev = '<button class="slider__btn-prev slick-arrow">\n' +
     '          <svg class="icon icon-prev">\n' +
@@ -202,4 +202,28 @@ $( document ).ready(function() {
     mainClass: 'my-mfp-slide-bottom'
   });
 
+  $('.quiz__btn').on('click', function (e) {
+    e.preventDefault();
+    let stepActive = $('.quiz__step--active');
+
+    if (stepActive.hasClass("quiz__step--one")) {
+      stepActive.removeClass('quiz__step--active');
+      $('.quiz__step--two').addClass('quiz__step--active');
+    } else if (stepActive.hasClass("quiz__step--two")) {
+      stepActive.removeClass('quiz__step--active');
+      $('.quiz__step--three').addClass('quiz__step--active');
+    } else if (stepActive.hasClass("quiz__step--three")) {
+      stepActive.removeClass('quiz__step--active');
+      $('.quiz__step--four').addClass('quiz__step--active');
+    } else if (stepActive.hasClass("quiz__step--four")) {
+      stepActive.removeClass('quiz__step--active');
+      $('.quiz__step--five').addClass('quiz__step--active');
+    } else if (stepActive.hasClass("quiz__step--five")) {
+      stepActive.removeClass('quiz__step--active');
+      $('.quiz__step--six').addClass('quiz__step--active');
+      $('.quiz__btn').text('Отправить');
+    } else if (stepActive.hasClass("quiz__step--six")) {
+
+    }
+  });
 });

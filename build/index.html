@@ -186,9 +186,7 @@
       <div class="test__wrapper">
         <div class="test__content">
           <h4 class="test__title">Пройдите<span class="select"> простой тест</span> и получите персональное предложение
-          </h4>
-          <button class="test__btn btn">Пройти тест
-          </button>
+          </h4><a class="test__btn btn popup-with-form" href="#popup-quiz">Пройти тест</a>
         </div>
         <div class="test__img-wrapper"><img class="test__img" src="img/test-dog.png" alt="" role="presentation"/>
         </div>
@@ -209,16 +207,7 @@
             <div class="team-gallery__pet">Питомец: Пес Бамси
             </div>
           </div>
-          <div class="team-gallery__item">
-            <div class="team-gallery__img-wrapper"><img class="team-gallery__img" src="img/team/team-2.jpg" alt="team-2" title=""/>
-            </div>
-            <h5 class="team-gallery__name">Вячеслав Пономарев
-            </h5>
-            <div class="team-gallery__post">Менеджер по продажам
-            </div>
-            <div class="team-gallery__pet">Питомец: Собака
-            </div>
-          </div>
+          <!--+galleryItem('2', 'Вячеслав Пономарев', 'Менеджер по продажам', 'Питомец: Собака')-->
           <div class="team-gallery__item">
             <div class="team-gallery__img-wrapper"><img class="team-gallery__img" src="img/team/team-3.jpg" alt="team-3" title=""/>
             </div>
@@ -456,27 +445,7 @@
         </div>
       </div>
     </section>
-    <section class="reviews-partners">
-      <div class="reviews-partners__wrapper container">
-        <h2 class="reviews-partners__title">
-          <sapn class="select">Отзывы</sapn> наших партнёров
-        </h2>
-        <div class="reviews-partners__list">
-          <div class="reviews-partners__item"><img class="reviews-partners__img" src="img/reviewsPartners/reviews-1.png" alt="reviews-1" title=""/>
-          </div>
-          <div class="reviews-partners__item"><img class="reviews-partners__img" src="img/reviewsPartners/reviews-2.png" alt="reviews-2" title=""/>
-          </div>
-          <div class="reviews-partners__item"><img class="reviews-partners__img" src="img/reviewsPartners/reviews-3.png" alt="reviews-3" title=""/>
-          </div>
-          <div class="reviews-partners__item"><img class="reviews-partners__img" src="img/reviewsPartners/reviews-1.png" alt="reviews-1" title=""/>
-          </div>
-          <div class="reviews-partners__item"><img class="reviews-partners__img" src="img/reviewsPartners/reviews-2.png" alt="reviews-2" title=""/>
-          </div>
-          <div class="reviews-partners__item"><img class="reviews-partners__img" src="img/reviewsPartners/reviews-3.png" alt="reviews-3" title=""/>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!--+reviews-partners()-->
     <section class="reviews">
       <div class="reviews__wrapper container">
         <h2 class="reviews__title">Что говорят
@@ -646,5 +615,119 @@
         </div>
       </form>
     </div>
+    <section class="quiz mfp-hide white-popup-block container" id="popup-quiz">
+      <form>
+        <div class="quiz__wrapper">
+          <div class="quiz__step quiz__step--one quiz__step quiz__step--active">
+            <h3 class="quiz__title">Вы являетесь:
+            </h3>
+            <div class="quiz__answers">
+              <div class="radio"><input class="radio__input" type="radio" name="whoAreYou" id="Представителем магазина" value="whoAreYou"/>
+                <label class="radio__label" for="Представителем магазина">Представителем магазина
+                </label>
+              </div>
+              <div class="radio"><input class="radio__input" type="radio" name="whoAreYou" id="Представителем ветеринарной клиники" value="whoAreYou"/>
+                <label class="radio__label" for="Представителем ветеринарной клиники">Представителем ветеринарной клиники
+                </label>
+              </div>
+              <div class="radio"><input class="radio__input" type="radio" name="whoAreYou" id="Заводчиком" value="whoAreYou"/>
+                <label class="radio__label" for="Заводчиком">Заводчиком
+                </label>
+              </div>
+              <div class="radio"><input class="radio__input" type="radio" name="whoAreYou" id="Дистрибьютором" value="whoAreYou"/>
+                <label class="radio__label" for="Дистрибьютором">Дистрибьютором
+                </label>
+              </div>
+              <div class="radio"><input class="radio__input" type="radio" name="whoAreYou" id="Частным лицом" value="whoAreYou"/>
+                <label class="radio__label" for="Частным лицом">Частным лицом
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="quiz__step quiz__step--two">
+            <h3 class="quiz__title">Вы ищите корм для:
+            </h3>
+            <div class="quiz__answers">
+              <div class="radio"><input class="radio__input" type="radio" name="pet" id="Для кошек" value="pet"/>
+                <label class="radio__label" for="Для кошек">Для кошек
+                </label>
+              </div>
+              <div class="radio"><input class="radio__input" type="radio" name="pet" id="Для собак" value="pet"/>
+                <label class="radio__label" for="Для собак">Для собак
+                </label>
+              </div>
+              <div class="radio"><input class="radio__input" type="radio" name="pet" id="Для кошек и собак" value="pet"/>
+                <label class="radio__label" for="Для кошек и собак">Для кошек и собак
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="quiz__step quiz__step--three">
+            <h3 class="quiz__title">Какой вид корма Вас интересует:
+            </h3>
+            <div class="quiz__answers">
+              <div class="radio"><input class="radio__input" type="radio" name="type" id="Сухой корм" value="type"/>
+                <label class="radio__label" for="Сухой корм">Сухой корм
+                </label>
+              </div>
+              <div class="radio"><input class="radio__input" type="radio" name="type" id="Влажный корм/консервированный корм" value="type"/>
+                <label class="radio__label" for="Влажный корм/консервированный корм">Влажный корм/консервированный корм
+                </label>
+              </div>
+              <div class="radio"><input class="radio__input" type="radio" name="type" id="Оба вида" value="type"/>
+                <label class="radio__label" for="Оба вида">Оба вида
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="quiz__step quiz__step--four">
+            <h3 class="quiz__title">Что для Вас важно в сотрудничестве с поставщиком корма?
+            </h3>
+            <div class="quiz__answers">
+              <div class="text-area"><textarea class="text-area__input" placeholder="Введите текст"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="quiz__step quiz__step--five">
+            <h3 class="quiz__title">Какую партию корма вы готовы заказать на начальном этапе?
+            </h3>
+            <div class="quiz__answers">
+              <div class="radio"><input class="radio__input" type="radio" name="batch " id="Упаковку сухого корма/ паучей/ консервов на пробу" value="batch "/>
+                <label class="radio__label" for="Упаковку сухого корма/ паучей/ консервов на пробу">Упаковку сухого корма/ паучей/ консервов на пробу
+                </label>
+              </div>
+              <div class="radio"><input class="radio__input" type="radio" name="batch " id="Около 100 кг" value="batch "/>
+                <label class="radio__label" for="Около 100 кг">Около 100 кг
+                </label>
+              </div>
+              <div class="radio"><input class="radio__input" type="radio" name="batch " id="Около 1 тонны" value="batch "/>
+                <label class="radio__label" for="Около 1 тонны">Около 1 тонны
+                </label>
+              </div>
+              <div class="radio"><input class="radio__input" type="radio" name="batch " id="Фура" value="batch "/>
+                <label class="radio__label" for="Фура">Фура
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="quiz__step quiz__step--six">
+            <h3 class="quiz__title">Данные для связи
+            </h3>
+            <div class="quiz__answers">
+              <div class="quiz__input-wrapper">
+                <div class="input-item">
+                  <label class="input-item__label" for="Ф.И.О">Ф.И.О
+                  </label><input class="input-item__input" type="text" for="Ф.И.О" placeholder="Ф.И.О"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="quiz__nav-wrapper">
+            <button class="quiz__btn btn">Далее
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
   </body>
 </html>

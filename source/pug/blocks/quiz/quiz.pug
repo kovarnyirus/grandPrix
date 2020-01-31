@@ -1,0 +1,54 @@
+mixin radioBtn(value, name)
+	+b.radio
+		+e.INPUT.input(type='radio' name= value id= name value= value )= value
+		+e.LABEL.label(for= name)= name
+
+mixin inputText(name, placeholder)
+	+b.input-item
+		+e.LABEL.label(for= name )= name
+		+e.INPUT.input(type='text' for= name placeholder= placeholder )
+
+mixin quiz()
+	+b.SECTION.quiz#popup-quiz.mfp-hide.white-popup-block.container
+		form
+			+e.wrapper
+				+e.step--one.quiz__step--active
+					+e.H3.title Вы являетесь:
+					+e.answers
+						+radioBtn('whoAreYou', 'Представителем магазина')
+						+radioBtn('whoAreYou', 'Представителем ветеринарной клиники')
+						+radioBtn('whoAreYou', 'Заводчиком')
+						+radioBtn('whoAreYou', 'Дистрибьютором')
+						+radioBtn('whoAreYou', 'Частным лицом')
+				+e.step--two
+					+e.H3.title Вы ищите корм для:
+					+e.answers
+						+radioBtn('pet', 'Для кошек')
+						+radioBtn('pet', 'Для собак')
+						+radioBtn('pet', 'Для кошек и собак')
+				+e.step--three
+					+e.H3.title Какой вид корма Вас интересует:
+					+e.answers
+						+radioBtn('type', 'Сухой корм')
+						+radioBtn('type', 'Влажный корм/консервированный корм')
+						+radioBtn('type', 'Оба вида')
+				+e.step--four
+					+e.H3.title Что для Вас важно в сотрудничестве с поставщиком корма?
+					+e.answers
+						+b.text-area
+							+e.TEXTAREA.input(placeholder='Введите текст')
+				+e.step--five
+					+e.H3.title Какую партию корма вы готовы заказать на начальном этапе?
+					+e.answers
+						+radioBtn('batch ', 'Упаковку сухого корма/ паучей/ консервов на пробу')
+						+radioBtn('batch ', 'Около 100 кг')
+						+radioBtn('batch ', 'Около 1 тонны')
+						+radioBtn('batch ', 'Фура')
+				+e.step--six
+					+e.H3.title Данные для связи
+					+e.answers
+						+e.input-wrapper
+							+inputText("Ф.И.О", 'Ф.И.О')
+				+e.nav-wrapper
+					+e.BUTTON.btn.btn Далее
+

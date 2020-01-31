@@ -1,0 +1,47 @@
+.quiz{
+  position: relative;
+  background-color: white;
+  color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 15px;
+  max-width: 400px;
+
+  &__title{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__answers{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .radio{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  &__step{
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    &--active{
+      opacity: 1;
+      height: auto;
+      visibility: visible;
+    }
+  }
+  &__btn{
+    min-width: 250px;
+    width: 100%;
+  }
+  &__input-wrapper{
+    width: 100%;
+  }
+  @include media-breakpoint-up(sm){
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}

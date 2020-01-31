@@ -32,7 +32,6 @@
   }
 
   &__btn {
-    display: block;
     border: none;
     font-family: AGAvalancheC;
     font-style: normal;
@@ -43,11 +42,14 @@
     text-transform: uppercase;
     color: #000000;
     background: linear-gradient(180deg, #FFE887 0%, #FFBB22 100%);
-    min-height: 68px;
     border-radius: 12px;
     min-width: 210px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    max-width: 350px;
+    justify-content: center;
+    align-items: center;
   }
   @include media-breakpoint-up(md){
     &__wrapper{
@@ -73,6 +75,9 @@
       margin-left: 0;
       font-size: 16px;
       line-height: 146%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     &__img-wrapper{
       display: block;
