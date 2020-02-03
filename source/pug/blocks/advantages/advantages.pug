@@ -19,15 +19,15 @@ mixin advantages()
 					span.select  оптовый прайс-лист
 					|  и станьте нашим партнером уже сегодня
 					span.select  нашей продукции
-				form
+				form(action="send1.php" method="post")
 					+e.wrapper
 						+e.item
-							+e.LABEL.label(for='mail')
+							+e.LABEL.label(for='mailAdvantages')
 								+icon('mail')
-							+e.INPUT.input(type='email' placeholder='Введите Ваш e-mail' id='mail')
+							+e.INPUT.input(type='email' name='email' required placeholder='Введите Ваш e-mail' id='mailAdvantages')
 						+e.item
-							+e.LABEL.label--phone(for='phone')
+							+e.LABEL.label--phone(for='phoneAdvantages')
 								+icon('phone')
-							+e.INPUT.input(type='tel' id='phone')
+							+e.INPUT.input(type='tel' name='phone' required id='phoneAdvantages')
 						+e.BUTTON.btn.btn Получить прайс
 						+e.P.agreement Нажимая на кнопку, Вы соглашаетесь с условиями политики конфиденциальности

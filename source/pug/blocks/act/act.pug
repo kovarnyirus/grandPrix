@@ -1,12 +1,12 @@
 mixin input-mail(id)
 	+e.LABEL.label(for='mail' + id)
 		+icon('mail')
-	+e.INPUT.input(type='email' placeholder='Введите Ваш e-mail' id='mail' + id)
+	+e.INPUT.input(type='email' name='email' required placeholder='Введите Ваш e-mail' id='mail' + id)
 
 mixin input-phone(id)
 	+e.LABEL.label--phone(for='phone' + id)
 		+icon('phone')
-	+e.INPUT.input(type='tel' id='phone' + id)
+	+e.INPUT.input(type='tel' name='phone' required id='phone' + id)
 
 mixin act(id, className)
 	+b.SECTION.act(class= className)
@@ -26,7 +26,7 @@ mixin act(id, className)
 				+e.H4.title Заполните форму и получите
 					span.select  оптовый прайс-лист
 					|  нашей продукции
-				form
+				form(action="send1.php" method="post")
 					+e.wrapper
 						+e.item
 							+input-mail(id)

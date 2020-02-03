@@ -59,21 +59,21 @@
         <div class="form">
           <h4 class="form__title">Заполните форму и получите<span class="select"> оптовый прайс-лист</span> нашей продукции
           </h4>
-          <form>
+          <form action="send1.php" method="post">
             <div class="form__wrapper">
               <div class="form__item">
                 <label class="form__label" for="mail1">
                   <svg class="icon icon-mail ">
                     <use xlink:href="img/svg/sprite.svg#icon-mail"></use>
                   </svg>
-                </label><input class="form__input" type="email" placeholder="Введите Ваш e-mail" id="mail1"/>
+                </label><input class="form__input" type="email" name="email" required="required" placeholder="Введите Ваш e-mail" id="mail1"/>
               </div>
               <div class="form__item">
                 <label class="form__label form__label--phone" for="phone1">
                   <svg class="icon icon-phone ">
                     <use xlink:href="img/svg/sprite.svg#icon-phone"></use>
                   </svg>
-                </label><input class="form__input" type="tel" id="phone1"/>
+                </label><input class="form__input" type="tel" name="phone" required="required" id="phone1"/>
               </div>
               <button class="form__btn btn">Получить прайс-лист
               </button>
@@ -129,21 +129,21 @@
         <div class="form form--advantages">
           <h4 class="form__title">Заполните форму, получите<span class="select"> оптовый прайс-лист</span> и станьте нашим партнером уже сегодня<span class="select"> нашей продукции</span>
           </h4>
-          <form>
+          <form action="send1.php" method="post">
             <div class="form__wrapper">
               <div class="form__item">
-                <label class="form__label" for="mail">
+                <label class="form__label" for="mailAdvantages">
                   <svg class="icon icon-mail ">
                     <use xlink:href="img/svg/sprite.svg#icon-mail"></use>
                   </svg>
-                </label><input class="form__input" type="email" placeholder="Введите Ваш e-mail" id="mail"/>
+                </label><input class="form__input" type="email" name="email" required="required" placeholder="Введите Ваш e-mail" id="mailAdvantages"/>
               </div>
               <div class="form__item">
-                <label class="form__label form__label--phone" for="phone">
+                <label class="form__label form__label--phone" for="phoneAdvantages">
                   <svg class="icon icon-phone ">
                     <use xlink:href="img/svg/sprite.svg#icon-phone"></use>
                   </svg>
-                </label><input class="form__input" type="tel" id="phone"/>
+                </label><input class="form__input" type="tel" name="phone" required="required" id="phoneAdvantages"/>
               </div>
               <button class="form__btn btn">Получить прайс
               </button>
@@ -530,21 +530,21 @@
         <div class="form">
           <h4 class="form__title">Заполните форму и получите<span class="select"> оптовый прайс-лист</span> нашей продукции
           </h4>
-          <form>
+          <form action="send1.php" method="post">
             <div class="form__wrapper">
               <div class="form__item">
                 <label class="form__label" for="mail2">
                   <svg class="icon icon-mail ">
                     <use xlink:href="img/svg/sprite.svg#icon-mail"></use>
                   </svg>
-                </label><input class="form__input" type="email" placeholder="Введите Ваш e-mail" id="mail2"/>
+                </label><input class="form__input" type="email" name="email" required="required" placeholder="Введите Ваш e-mail" id="mail2"/>
               </div>
               <div class="form__item">
                 <label class="form__label form__label--phone" for="phone2">
                   <svg class="icon icon-phone ">
                     <use xlink:href="img/svg/sprite.svg#icon-phone"></use>
                   </svg>
-                </label><input class="form__input" type="tel" id="phone2"/>
+                </label><input class="form__input" type="tel" name="phone" required="required" id="phone2"/>
               </div>
               <button class="form__btn btn">Получить прайс-лист
               </button>
@@ -559,28 +559,28 @@
       <div class="footer__wrapper container">
         <div class="footer__logo-wrapper"><img class="footer__logo" src="img/logo.svg" width="102" alt="" role="presentation"/>
         </div>
-        <div class="footer__contacts"><a class="footer__phone" src="tel:88001234567">8 800 123 45 67</a><a class="footer__callback popup-with-form" href="#popup-callback">Заказать обратный звонок</a>
+        <div class="footer__contacts"><a class="footer__phone" href="tel:88001234567">8 800 123 45 67</a><a class="footer__callback popup-with-form" href="#popup-callback">Заказать обратный звонок</a>
         </div>
       </div>
     </footer>
     <div class="popup-callback mfp-hide white-popup-block" id="popup-callback">
-      <form>
+      <form action="send2.php" method="post">
         <div class="popup-callback__wrapper">
-          <h5 class="popup-callback__title">форма обратной связи
+          <h5 class="popup-callback__title">Форма обратной связи
           </h5>
           <div class="popup-callback__item">
             <label class="popup-callback__label" for="mailundefined">
               <svg class="icon icon-mail ">
                 <use xlink:href="img/svg/sprite.svg#icon-mail"></use>
               </svg>
-            </label><input class="popup-callback__input" type="email" placeholder="Введите Ваш e-mail" id="mailundefined"/>
+            </label><input class="popup-callback__input" type="email" name="email" required="required" placeholder="Введите Ваш e-mail" id="mailundefined"/>
           </div>
           <div class="popup-callback__item">
             <label class="popup-callback__label popup-callback__label--phone" for="phoneundefined">
               <svg class="icon icon-phone ">
                 <use xlink:href="img/svg/sprite.svg#icon-phone"></use>
               </svg>
-            </label><input class="popup-callback__input" type="tel" id="phoneundefined"/>
+            </label><input class="popup-callback__input" type="tel" name="phone" required="required" id="phoneundefined"/>
           </div>
           <button class="popup-callback__btn btn">Отправить
           </button>
@@ -590,23 +590,24 @@
       </form>
     </div>
     <div class="popup-callback mfp-hide white-popup-block" id="popup-price">
-      <form>
+      <form action="send3.php" method="post">
         <div class="popup-callback__wrapper">
           <h5 class="popup-callback__title">Получить прайс-лист
           </h5>
+          <input class="hide-input" type="text" name="hide-input"/>
           <div class="popup-callback__item">
             <label class="popup-callback__label" for="mailNaN">
               <svg class="icon icon-mail ">
                 <use xlink:href="img/svg/sprite.svg#icon-mail"></use>
               </svg>
-            </label><input class="popup-callback__input" type="email" placeholder="Введите Ваш e-mail" id="mailNaN"/>
+            </label><input class="popup-callback__input" type="email" name="email" required="required" placeholder="Введите Ваш e-mail" id="mailNaN"/>
           </div>
           <div class="popup-callback__item">
             <label class="popup-callback__label popup-callback__label--phone" for="phoneNaN">
               <svg class="icon icon-phone ">
                 <use xlink:href="img/svg/sprite.svg#icon-phone"></use>
               </svg>
-            </label><input class="popup-callback__input" type="tel" id="phoneNaN"/>
+            </label><input class="popup-callback__input" type="tel" name="phone" required="required" id="phoneNaN"/>
           </div>
           <button class="popup-callback__btn btn">Отправить
           </button>
@@ -616,29 +617,29 @@
       </form>
     </div>
     <section class="quiz mfp-hide white-popup-block container" id="popup-quiz">
-      <form>
+      <form action="send4.php" method="post">
         <div class="quiz__wrapper">
           <div class="quiz__step quiz__step--one quiz__step quiz__step--active">
             <h3 class="quiz__title">Вы являетесь:
             </h3>
             <div class="quiz__answers">
-              <div class="radio"><input class="radio__input" type="radio" name="whoAreYou" id="Представителем магазина" value="whoAreYou"/>
+              <div class="radio"><input class="radio__input" type="radio" name="whoAreYou" id="Представителем магазина" value="Представителем магазина" checked="checked"/>
                 <label class="radio__label" for="Представителем магазина">Представителем магазина
                 </label>
               </div>
-              <div class="radio"><input class="radio__input" type="radio" name="whoAreYou" id="Представителем ветеринарной клиники" value="whoAreYou"/>
+              <div class="radio"><input class="radio__input" type="radio" name="whoAreYou" id="Представителем ветеринарной клиники" value="Представителем ветеринарной клиники"/>
                 <label class="radio__label" for="Представителем ветеринарной клиники">Представителем ветеринарной клиники
                 </label>
               </div>
-              <div class="radio"><input class="radio__input" type="radio" name="whoAreYou" id="Заводчиком" value="whoAreYou"/>
+              <div class="radio"><input class="radio__input" type="radio" name="whoAreYou" id="Заводчиком" value="Заводчиком"/>
                 <label class="radio__label" for="Заводчиком">Заводчиком
                 </label>
               </div>
-              <div class="radio"><input class="radio__input" type="radio" name="whoAreYou" id="Дистрибьютором" value="whoAreYou"/>
+              <div class="radio"><input class="radio__input" type="radio" name="whoAreYou" id="Дистрибьютором" value="Дистрибьютором"/>
                 <label class="radio__label" for="Дистрибьютором">Дистрибьютором
                 </label>
               </div>
-              <div class="radio"><input class="radio__input" type="radio" name="whoAreYou" id="Частным лицом" value="whoAreYou"/>
+              <div class="radio"><input class="radio__input" type="radio" name="whoAreYou" id="Частным лицом" value="Частным лицом"/>
                 <label class="radio__label" for="Частным лицом">Частным лицом
                 </label>
               </div>
@@ -648,15 +649,15 @@
             <h3 class="quiz__title">Вы ищите корм для:
             </h3>
             <div class="quiz__answers">
-              <div class="radio"><input class="radio__input" type="radio" name="pet" id="Для кошек" value="pet"/>
+              <div class="radio"><input class="radio__input" type="radio" name="pet" id="Для кошек" value="Для кошек" checked="checked"/>
                 <label class="radio__label" for="Для кошек">Для кошек
                 </label>
               </div>
-              <div class="radio"><input class="radio__input" type="radio" name="pet" id="Для собак" value="pet"/>
+              <div class="radio"><input class="radio__input" type="radio" name="pet" id="Для собак" value="Для собак"/>
                 <label class="radio__label" for="Для собак">Для собак
                 </label>
               </div>
-              <div class="radio"><input class="radio__input" type="radio" name="pet" id="Для кошек и собак" value="pet"/>
+              <div class="radio"><input class="radio__input" type="radio" name="pet" id="Для кошек и собак" value="Для кошек и собак"/>
                 <label class="radio__label" for="Для кошек и собак">Для кошек и собак
                 </label>
               </div>
@@ -666,15 +667,15 @@
             <h3 class="quiz__title">Какой вид корма Вас интересует:
             </h3>
             <div class="quiz__answers">
-              <div class="radio"><input class="radio__input" type="radio" name="type" id="Сухой корм" value="type"/>
+              <div class="radio"><input class="radio__input" type="radio" name="type" id="Сухой корм" value="Сухой корм" checked="checked"/>
                 <label class="radio__label" for="Сухой корм">Сухой корм
                 </label>
               </div>
-              <div class="radio"><input class="radio__input" type="radio" name="type" id="Влажный корм/консервированный корм" value="type"/>
+              <div class="radio"><input class="radio__input" type="radio" name="type" id="Влажный корм/консервированный корм" value="Влажный корм/консервированный корм"/>
                 <label class="radio__label" for="Влажный корм/консервированный корм">Влажный корм/консервированный корм
                 </label>
               </div>
-              <div class="radio"><input class="radio__input" type="radio" name="type" id="Оба вида" value="type"/>
+              <div class="radio"><input class="radio__input" type="radio" name="type" id="Оба вида" value="Оба вида"/>
                 <label class="radio__label" for="Оба вида">Оба вида
                 </label>
               </div>
@@ -684,7 +685,7 @@
             <h3 class="quiz__title">Что для Вас важно в сотрудничестве с поставщиком корма?
             </h3>
             <div class="quiz__answers">
-              <div class="text-area"><textarea class="text-area__input" placeholder="Введите текст"></textarea>
+              <div class="text-area"><textarea class="text-area__input" placeholder="Введите текст" name="question"></textarea>
               </div>
             </div>
           </div>
@@ -692,19 +693,19 @@
             <h3 class="quiz__title">Какую партию корма вы готовы заказать на начальном этапе?
             </h3>
             <div class="quiz__answers">
-              <div class="radio"><input class="radio__input" type="radio" name="batch " id="Упаковку сухого корма/ паучей/ консервов на пробу" value="batch "/>
+              <div class="radio"><input class="radio__input" type="radio" name="batch" id="Упаковку сухого корма/ паучей/ консервов на пробу" value="Упаковку сухого корма/ паучей/ консервов на пробу" checked="checked"/>
                 <label class="radio__label" for="Упаковку сухого корма/ паучей/ консервов на пробу">Упаковку сухого корма/ паучей/ консервов на пробу
                 </label>
               </div>
-              <div class="radio"><input class="radio__input" type="radio" name="batch " id="Около 100 кг" value="batch "/>
+              <div class="radio"><input class="radio__input" type="radio" name="batch" id="Около 100 кг" value="Около 100 кг"/>
                 <label class="radio__label" for="Около 100 кг">Около 100 кг
                 </label>
               </div>
-              <div class="radio"><input class="radio__input" type="radio" name="batch " id="Около 1 тонны" value="batch "/>
+              <div class="radio"><input class="radio__input" type="radio" name="batch" id="Около 1 тонны" value="Около 1 тонны"/>
                 <label class="radio__label" for="Около 1 тонны">Около 1 тонны
                 </label>
               </div>
-              <div class="radio"><input class="radio__input" type="radio" name="batch " id="Фура" value="batch "/>
+              <div class="radio"><input class="radio__input" type="radio" name="batch" id="Фура" value="Фура"/>
                 <label class="radio__label" for="Фура">Фура
                 </label>
               </div>
@@ -716,9 +717,25 @@
             <div class="quiz__answers">
               <div class="quiz__input-wrapper">
                 <div class="input-item">
-                  <label class="input-item__label" for="Ф.И.О">Ф.И.О
-                  </label><input class="input-item__input" type="text" for="Ф.И.О" placeholder="Ф.И.О"/>
+                  <label class="input-item__label" for="userName">
+                  </label><input class="input-item__input" type="text" id="userName" name="userName" placeholder="Ф.И.О"/>
                 </div>
+              </div>
+              <div class="popup-callback__item">
+                <label class="popup-callback__label" for="mailQuiz">
+                  <svg class="icon icon-mail ">
+                    <use xlink:href="img/svg/sprite.svg#icon-mail"></use>
+                  </svg>
+                </label>
+                <input class="popup-callback__input" type="email" name="email" placeholder="Введите Ваш e-mail" id="mailQuiz" required="required"/>
+              </div>
+              <div class="popup-callback__item">
+                <label class="popup-callback__label popup-callback__label--phone" for="phoneQuiz">
+                  <svg class="icon icon-phone ">
+                    <use xlink:href="img/svg/sprite.svg#icon-phone"></use>
+                  </svg>
+                </label>
+                <input class="popup-callback__input" type="tel" name="phone" id="phoneQuiz" required="required"/>
               </div>
             </div>
           </div>

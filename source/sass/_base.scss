@@ -77,6 +77,7 @@ p {
 
 a {
   &:hover {
+    color: #d7d7d7;
     text-decoration: none;
   }
 }
@@ -106,7 +107,6 @@ a {
   box-shadow: 0px 10px 50px rgba(255, 193, 48, 0.5);
   transition: .1s;
 
-
   &:before {
     position: absolute;
     content: '';
@@ -125,6 +125,7 @@ a {
     outline: none;
     background: linear-gradient(180deg, #FFE887 0%, #FFBB22 100%);
     box-shadow: none;
+    color: black;
 
     &:before {
       opacity: 0;
@@ -135,6 +136,7 @@ a {
     outline: none;
     background: #FFE291;
     box-shadow: none;
+    color: black;
 
     &:before {
       opacity: 0;
@@ -464,6 +466,7 @@ a {
     min-width: 100%;
     display: flex;
     align-items: center;
+
     height: 68px;
     border: none;
     border-radius: 12px 12px 12px 12px;
@@ -478,4 +481,7 @@ a {
       font-size: 16px;
     }
   }
+}
+.hide-input{
+  display: none;
 }

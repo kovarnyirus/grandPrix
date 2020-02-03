@@ -1,8 +1,8 @@
 mixin modal()
 	+b.popup-callback#popup-callback.mfp-hide.white-popup-block
-		form
+		form(action="send2.php" method="post")
 			+e.wrapper
-				+e.H5.title форма обратной связи
+				+e.H5.title Форма обратной связи
 				+e.item
 					+input-mail(id)
 				+e.item
@@ -11,9 +11,10 @@ mixin modal()
 				+e.P.agreement Нажимая на кнопку, Вы соглашаетесь с условиями политики конфиденциальности
 
 	+b.popup-callback#popup-price.mfp-hide.white-popup-block
-		form
+		form(action="send3.php" method="post")
 			+e.wrapper
 				+e.H5.title Получить прайс-лист
+				input.hide-input(type='text' name='hide-input')
 				+e.item
 					+input-mail(++id)
 				+e.item

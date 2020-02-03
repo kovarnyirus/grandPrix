@@ -39,6 +39,7 @@
   }
   &__input-wrapper{
     width: 100%;
+    margin-bottom: 15px;
   }
   @include media-breakpoint-up(sm){
     padding-left: 25px;

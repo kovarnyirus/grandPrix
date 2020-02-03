@@ -205,7 +205,6 @@ $(document).ready(function () {
   $('.quiz__btn').on('click', function (e) {
     e.preventDefault();
     let stepActive = $('.quiz__step--active');
-
     if (stepActive.hasClass("quiz__step--one")) {
       stepActive.removeClass('quiz__step--active');
       $('.quiz__step--two').addClass('quiz__step--active');
@@ -223,7 +222,14 @@ $(document).ready(function () {
       $('.quiz__step--six').addClass('quiz__step--active');
       $('.quiz__btn').text('Отправить');
     } else if (stepActive.hasClass("quiz__step--six")) {
-
+      $('#popup-quiz form').submit()
     }
   });
+
+
+  $('.catalog__btn').on('click', function (e) {
+    let productName = $(this).parent('.catalog__item').find('.catalog__name').html();
+    $('#popup-price').find('.hide-input').val(productName);
+  });
+
 });
