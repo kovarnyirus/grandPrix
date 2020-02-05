@@ -42,11 +42,15 @@
     opacity: 0;
     visibility: hidden;
     position: absolute;
+    height: 0;
+    overflow: hidden;
     &.active{
+      height: auto;
       opacity: 1;
       visibility: visible;
       transform: none;
       position: static;
+      overflow: visible;
     }
   }
 
