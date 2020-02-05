@@ -232,4 +232,22 @@ $(document).ready(function () {
     $('#popup-price').find('.hide-input').val(productName);
   });
 
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 400) {
+      $('.scroll-top').addClass('scroll-top--visible');
+    } else {
+      $('.scroll-top').removeClass('scroll-top--visible');
+    }
+  });
+
+
+  $('.scroll-top').click(function () {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 500);
+    return false;
+  });
+
+
+
 });
