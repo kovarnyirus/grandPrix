@@ -23,7 +23,7 @@
       </svg>
     </button>
     <header class="header">
-      <div class="header__wrapper container"><a class="header__logo-link"><img class="header__logo" src="img/logo.svg" width="102px" alt="" role="presentation"/></a>
+      <div class="header__wrapper container"><a class="header__logo-link" href="https://grand-prix.shop" target="_blank"><img class="header__logo" src="img/logo.svg" width="102px" alt="" role="presentation"/></a>
         <nav class="main-nav">
           <button class="main-nav__toggle"><span></span>
           </button>
@@ -36,8 +36,8 @@
             </li>
             <li class="main-nav__item"><a class="main-nav__link" href="#catalog">каталог</a>
             </li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">условия сотрудничества</a>
-            </li>
+            <!--+e.LI.item-->
+            <!--	+e.A.link(href='#') условия сотрудничества-->
           </ul>
         </nav>
         <div class="header__contacts"><a class="header__tel" href="tel:+74962254646">+7 (496) 225-46-46</a><a class="header__callback popup-with-form" href="#popup-callback">Заказать обратный звонок</a>
@@ -91,7 +91,7 @@
     </section>
     <section class="advantages" id="advantages">
       <div class="advantages__wrapper container">
-        <h2 class="advantages__title">Почему Вам стоит стать нашими официальными партнерами<span class="select"> уже сегодня</span>
+        <h2 class="advantages__title">Почему Вам стоит стать нашим официальным партнером<span class="select"> уже сегодня</span>
         </h2>
         <div class="advantages__list">
           <div class="advantages__item">
@@ -132,7 +132,7 @@
           </div>
         </div>
         <div class="form form--advantages">
-          <h4 class="form__title">Заполните форму, получите<span class="select"> оптовый прайс-лист</span> и станьте нашим партнером уже сегодня<span class="select"> нашей продукции</span>
+          <h4 class="form__title">Заполните форму, получите<span class="select"> оптовый прайс-лист</span> и станьте нашим партнером<span class="select"> уже сегодня</span>
           </h4>
           <form action="send1.php" method="post">
             <div class="form__wrapper">
@@ -324,51 +324,36 @@
               <div class="catalog__item">
                 <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-1.png" alt="team-1" width="75px" title=""/>
                 </div>
-                <h5 class="catalog__name">GRAND PRIX KITTEN корм для котят с лососем 300 г
-                </h5><a class="catalog__more popup-with-move-anim" href="#KITTEN1"> Подробнее</a>
+                <h5 class="catalog__name">GRAND PRIX KITTEN корм для котят с лососем
+                </h5>
+                <p class="catalog__size">В налиичии упаковки 300г и 1,5кг
+                </p><a class="catalog__more popup-with-move-anim" href="#KITTEN1"> Подробнее</a>
                 <div class="catalog__description zoom-anim-dialog mfp-hide" id="KITTEN1">Содержит все самое необходимое для здорового роста котенка. Богатый кальцием и фосфором — для укрепления костей и мышечной ткани, жирными кислотами — для улучшения работы мозга и повышения иммунитета, животными белками из рыбы и домашней птицы — для правильного развития малыша. 
                 </div><a class="catalog__btn btn popup-with-form" href="#popup-price">Узнать цену</a>
               </div>
-              <div class="catalog__item">
-                <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-2.png" alt="team-2" width="75px" title=""/>
-                </div>
-                <h5 class="catalog__name">GRAND PRIX KITTEN корм для котят с лососем 1.5 кг
-                </h5><a class="catalog__more popup-with-move-anim" href="#KITTEN2"> Подробнее</a>
-                <div class="catalog__description zoom-anim-dialog mfp-hide" id="KITTEN2">Содержит все самое необходимое для здорового роста котенка. Богатый кальцием и фосфором — для укрепления костей и мышечной ткани, жирными кислотами — для улучшения работы мозга и повышения иммунитета, животными белками из рыбы и домашней птицы — для правильного развития малыша. 
-                </div><a class="catalog__btn btn popup-with-form" href="#popup-price">Узнать цену</a>
-              </div>
+              <!--+catalogItem('2', 'GRAND PRIX KITTEN корм для котят с лососем 1.5 кг', 'Содержит все самое необходимое для здорового роста котенка. Богатый кальцием и фосфором — для укрепления костей и мышечной ткани, жирными кислотами — для улучшения работы мозга и повышения иммунитета, животными белками из рыбы и домашней птицы — для правильного развития малыша. ', 'KITTEN2')-->
               <div class="catalog__item">
                 <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-3.png" alt="team-3" width="75px" title=""/>
                 </div>
-                <h5 class="catalog__name">GRAND PRIX ORIGINAL корм для кошек с лососем 300 г
-                </h5><a class="catalog__more popup-with-move-anim" href="#ORIGINAL1"> Подробнее</a>
+                <h5 class="catalog__name">GRAND PRIX ORIGINAL корм для кошек с лососем
+                </h5>
+                <p class="catalog__size">В налиичии упаковки 300г и 1,5кг
+                </p><a class="catalog__more popup-with-move-anim" href="#ORIGINAL1"> Подробнее</a>
                 <div class="catalog__description zoom-anim-dialog mfp-hide" id="ORIGINAL1">Сбалансированный сухой корм премиум класса для здоровой кожи и блестящей шерсти. Особое сочетание масла лососевых рыб и льняного семя — натуральных источников жирных кислот Омега-з и Омега -6, необходимых для полноценного питания вашего питомца.
                 </div><a class="catalog__btn btn popup-with-form" href="#popup-price">Узнать цену</a>
               </div>
-              <div class="catalog__item">
-                <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-4.png" alt="team-4" width="75px" title=""/>
-                </div>
-                <h5 class="catalog__name">GRAND PRIX ORIGINAL корм для кошек с лососем 1.5 кг
-                </h5><a class="catalog__more popup-with-move-anim" href="#ORIGINAL2"> Подробнее</a>
-                <div class="catalog__description zoom-anim-dialog mfp-hide" id="ORIGINAL2">Сбалансированный сухой корм премиум класса для здоровой кожи и блестящей шерсти. Особое сочетание масла лососевых рыб и льняного семя — натуральных источников жирных кислот Омега-з и Омега -6, необходимых для полноценного питания вашего питомца.
-                </div><a class="catalog__btn btn popup-with-form" href="#popup-price">Узнать цену</a>
-              </div>
+              <!--+catalogItem('4', 'GRAND PRIX ORIGINAL корм для кошек с лососем 1.5 кг', 'Сбалансированный сухой корм премиум класса для здоровой кожи и блестящей шерсти. Особое сочетание масла лососевых рыб и льняного семя — натуральных источников жирных кислот Омега-з и Омега -6, необходимых для полноценного питания вашего питомца.', 'ORIGINAL2')-->
               <div class="catalog__item">
                 <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-5.png" alt="team-5" width="75px" title=""/>
                 </div>
-                <h5 class="catalog__name">GRAND PRIX STERILIZED корм для стерилизованных кошек с кроликом 300 г
-                </h5><a class="catalog__more popup-with-move-anim" href="#STERILIZED1"> Подробнее</a>
+                <h5 class="catalog__name">GRAND PRIX STERILIZED корм для стерилизованных кошек с кроликом
+                </h5>
+                <p class="catalog__size">В налиичии упаковки 300г и 1,5кг
+                </p><a class="catalog__more popup-with-move-anim" href="#STERILIZED1"> Подробнее</a>
                 <div class="catalog__description zoom-anim-dialog mfp-hide" id="STERILIZED1">Полноценный рацион для кошек, прошедших стерилизацию. L- карнитин помогает поддерживать оптимальный вес, железо и витамины группы B — всегда оставаться активными, сбалансированный комплекс минералов предотвращает образование камней в почках.
                 </div><a class="catalog__btn btn popup-with-form" href="#popup-price">Узнать цену</a>
               </div>
-              <div class="catalog__item">
-                <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-6.png" alt="team-6" width="75px" title=""/>
-                </div>
-                <h5 class="catalog__name">GRAND PRIX STERILIZED корм для стерилизованных кошек с кроликом 1.5 кг
-                </h5><a class="catalog__more popup-with-move-anim" href="#STERILIZED2"> Подробнее</a>
-                <div class="catalog__description zoom-anim-dialog mfp-hide" id="STERILIZED2">Полноценный рацион для кошек, прошедших стерилизацию. L- карнитин помогает поддерживать оптимальный вес, железо и витамины группы B — всегда оставаться активными, сбалансированный комплекс минералов предотвращает образование камней в почках.
-                </div><a class="catalog__btn btn popup-with-form" href="#popup-price">Узнать цену</a>
-              </div>
+              <!--+catalogItem('6', 'GRAND PRIX STERILIZED корм для стерилизованных кошек с кроликом 1.5 кг', 'Полноценный рацион для кошек, прошедших стерилизацию. L- карнитин помогает поддерживать оптимальный вес, железо и витамины группы B — всегда оставаться активными, сбалансированный комплекс минералов предотвращает образование камней в почках.', 'STERILIZED2')-->
               <div class="catalog__item">
                 <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-7.png" alt="team-7" width="75px" title=""/>
                 </div>
@@ -424,81 +409,131 @@
               <div class="catalog__item">
                 <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-dog-4.png" alt="team-dog-4" width="75px" title=""/>
                 </div>
-                <h5 class="catalog__name">GRAND PRIX SMALL для собак маленьких и миниатюрных пород 800 г
-                </h5><a class="catalog__more popup-with-move-anim" href="#dog4"> Подробнее</a>
-                <div class="catalog__description zoom-anim-dialog mfp-hide" id="dog4">Сбалансированный сухой рацион для щенков SMALL JUNIOR насыщен белками и жирными Омега-кислотами для правильного развития питомце. Полнорационный корм SMALL ADULT поддерживает иммунитет и укрепляет здоровье взрослых собак весом до 10 кг. На выбор два вкуса GRAND PRIX SMALL: классический с курицей и LAMB and RICE с ягненком.
+                <h5 class="catalog__name">GRAND PRIX Small Adult корм для собак мелких пород
+                </h5>
+                <p class="catalog__size">В налиичии упаковки 800г и 2,5кг
+                </p><a class="catalog__more popup-with-move-anim" href="#dog4"> Подробнее</a>
+                <div class="catalog__description zoom-anim-dialog mfp-hide" id="dog4">Сбалансированный сухой рацион для взрослых собак мелких и мини пород GRAND PRIX Small Adult  насыщен белками и жирными Омега-кислотами для правильного развития питомце. Полнорационный корм SMALL ADULT поддерживает иммунитет и укрепляет здоровье взрослых собак весом до 10 кг. На выбор два вкуса GRAND PRIX SMALL: классический с курицей и LAMB and RICE с ягненком.
                 </div><a class="catalog__btn btn popup-with-form" href="#popup-price">Узнать цену</a>
               </div>
               <div class="catalog__item">
                 <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-dog-5.png" alt="team-dog-5" width="75px" title=""/>
                 </div>
-                <h5 class="catalog__name">GRAND PRIX SMALL для собак маленьких и миниатюрных пород 2,5 кг
-                </h5><a class="catalog__more popup-with-move-anim" href="#dog5"> Подробнее</a>
+                <h5 class="catalog__name">GRAND PRIX Small Junior корм для щенков собак мелких и мини пород
+                </h5>
+                <p class="catalog__size">В налиичии упаковки 800г и 2,5кг
+                </p><a class="catalog__more popup-with-move-anim" href="#dog5"> Подробнее</a>
                 <div class="catalog__description zoom-anim-dialog mfp-hide" id="dog5">Сбалансированный сухой рацион для щенков SMALL JUNIOR насыщен белками и жирными Омега-кислотами для правильного развития питомце. Полнорационный корм SMALL ADULT поддерживает иммунитет и укрепляет здоровье взрослых собак весом до 10 кг. На выбор два вкуса GRAND PRIX SMALL: классический с курицей и LAMB and RICE с ягненком.
                 </div><a class="catalog__btn btn popup-with-form" href="#popup-price">Узнать цену</a>
               </div>
               <div class="catalog__item">
                 <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-dog-6.png" alt="team-dog-6" width="75px" title=""/>
                 </div>
-                <h5 class="catalog__name">GRAND PRIX MEDIUM для собак средних пород 2,5 кг
-                </h5><a class="catalog__more popup-with-move-anim" href="#dog6"> Подробнее</a>
-                <div class="catalog__description zoom-anim-dialog mfp-hide" id="dog6">Корм премиум класса MEDIUM JUNIOR — комплексное сухое питание для щенков средних пород. MEDIUM ADULT — сбалансированный рацион для взрослых собак весом от 11 до 25 кг. Содержит оптимальное количество витаминов, минералов и питательных элементов для здоровья и правильного развития ваших питомцев.
+                <h5 class="catalog__name">GRAND PRIX Small Adult LAMB Ягненок и Рис корм для собак мелких пород
+                </h5>
+                <p class="catalog__size">В налиичии упаковки 800г и 2,5кг
+                </p><a class="catalog__more popup-with-move-anim" href="#dog5"> Подробнее</a>
+                <div class="catalog__description zoom-anim-dialog mfp-hide" id="dog5">Сбалансированный сухой рацион для щенков SMALL JUNIOR насыщен белками и жирными Омега-кислотами для правильного развития питомце. Полнорационный корм SMALL ADULT поддерживает иммунитет и укрепляет здоровье взрослых собак весом до 10 кг. На выбор два вкуса GRAND PRIX SMALL: классический с курицей и LAMB and RICE с ягненком.
                 </div><a class="catalog__btn btn popup-with-form" href="#popup-price">Узнать цену</a>
               </div>
               <div class="catalog__item">
                 <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-dog-7.png" alt="team-dog-7" width="75px" title=""/>
                 </div>
-                <h5 class="catalog__name">GRAND PRIX MEDIUM для собак средних пород 12 кг
-                </h5><a class="catalog__more popup-with-move-anim" href="#dog7"> Подробнее</a>
+                <h5 class="catalog__name">GRAND PRIX MEDIUM для собак средних пород
+                </h5>
+                <p class="catalog__size">В налиичии упаковки 800г и 2,5кг
+                </p><a class="catalog__more popup-with-move-anim" href="#dog7"> Подробнее</a>
                 <div class="catalog__description zoom-anim-dialog mfp-hide" id="dog7">Корм премиум класса MEDIUM JUNIOR — комплексное сухое питание для щенков средних пород. MEDIUM ADULT — сбалансированный рацион для взрослых собак весом от 11 до 25 кг. Содержит оптимальное количество витаминов, минералов и питательных элементов для здоровья и правильного развития ваших питомцев.
                 </div><a class="catalog__btn btn popup-with-form" href="#popup-price">Узнать цену</a>
               </div>
               <div class="catalog__item">
                 <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-dog-8.png" alt="team-dog-8" width="75px" title=""/>
                 </div>
-                <h5 class="catalog__name">GRAND PRIX LARGE для собак крупных пород 2,5 кг
-                </h5><a class="catalog__more popup-with-move-anim" href="#dog8"> Подробнее</a>
-                <div class="catalog__description zoom-anim-dialog mfp-hide" id="dog8">Полнорационный сухой корм для щенков LARGE JUNIOR обеспечивает правильное формирование костей и мышечной ткани в период активного роста. Сбалансированный рацион LARGE ADULT для взрослых собак весом от 25 до 44 кг с повышенным содержанием мяса и овощей, богатый животными белками и клетчаткой, поможет вашему питомцу всегда оставаться в тонусе. 
+                <h5 class="catalog__name">GRAND PRIX MEDIUM для собак средних пород
+                </h5>
+                <p class="catalog__size">В налиичии упаковки 800г и 2,5кг
+                </p><a class="catalog__more popup-with-move-anim" href="#dog7"> Подробнее</a>
+                <div class="catalog__description zoom-anim-dialog mfp-hide" id="dog7">Корм премиум класса MEDIUM JUNIOR — комплексное сухое питание для щенков средних пород. MEDIUM ADULT — сбалансированный рацион для взрослых собак весом от 11 до 25 кг. Содержит оптимальное количество витаминов, минералов и питательных элементов для здоровья и правильного развития ваших питомцев.
                 </div><a class="catalog__btn btn popup-with-form" href="#popup-price">Узнать цену</a>
               </div>
               <div class="catalog__item">
                 <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-dog-9.png" alt="team-dog-9" width="75px" title=""/>
                 </div>
-                <h5 class="catalog__name">GRAND PRIX LARGE для собак крупных пород 12 кг
-                </h5><a class="catalog__more popup-with-move-anim" href="#dog9"> Подробнее</a>
-                <div class="catalog__description zoom-anim-dialog mfp-hide" id="dog9">Полнорационный сухой корм для щенков LARGE JUNIOR обеспечивает правильное формирование костей и мышечной ткани в период активного роста. Сбалансированный рацион LARGE ADULT для взрослых собак весом от 25 до 44 кг с повышенным содержанием мяса и овощей, богатый животными белками и клетчаткой, поможет вашему питомцу всегда оставаться в тонусе. 
+                <h5 class="catalog__name">GRAND PRIX Medium Adult корм для собак средних пород
+                </h5>
+                <p class="catalog__size">В налиичии упаковки 2.5кг и 12кг
+                </p><a class="catalog__more popup-with-move-anim" href="#dog9"> Подробнее</a>
+                <div class="catalog__description zoom-anim-dialog mfp-hide" id="dog9">Корм премиум класса MEDIUM JUNIOR — комплексное сухое питание для щенков средних пород. MEDIUM ADULT — сбалансированный рацион для взрослых собак весом от 11 до 25 кг. Содержит оптимальное количество витаминов, минералов и питательных элементов для здоровья и правильного развития ваших питомцев.
                 </div><a class="catalog__btn btn popup-with-form" href="#popup-price">Узнать цену</a>
               </div>
               <div class="catalog__item">
                 <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-dog-10.png" alt="team-dog-10" width="75px" title=""/>
                 </div>
-                <h5 class="catalog__name">GRAND PRIX Medium Junior для щенков собак средних пород
-                </h5><a class="catalog__more popup-with-move-anim" href="#dog10"> Подробнее</a>
-                <div class="catalog__description zoom-anim-dialog mfp-hide" id="dog10">в наличии упаковки 2,5 кг и 12 кг
+                <h5 class="catalog__name">GRAND PRIX Medium Junior корм для щенков собак средних пород
+                </h5>
+                <p class="catalog__size">В налиичии упаковки 2,5кг и 12кг
+                </p><a class="catalog__more popup-with-move-anim" href="#dog10"> Подробнее</a>
+                <div class="catalog__description zoom-anim-dialog mfp-hide" id="dog10">Корм премиум класса MEDIUM JUNIOR — комплексное сухое питание для щенков средних пород. MEDIUM ADULT — сбалансированный рацион для взрослых собак весом от 11 до 25 кг. Содержит оптимальное количество витаминов, минералов и питательных элементов для здоровья и правильного развития ваших питомцев.
                 </div><a class="catalog__btn btn popup-with-form" href="#popup-price">Узнать цену</a>
               </div>
               <div class="catalog__item">
                 <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-dog-11.png" alt="team-dog-11" width="75px" title=""/>
                 </div>
-                <h5 class="catalog__name">GRAND PRIX Medium Adult для собак средних пород
-                </h5><a class="catalog__more popup-with-move-anim" href="#dog11"> Подробнее</a>
-                <div class="catalog__description zoom-anim-dialog mfp-hide" id="dog11">в наличии упаковки 2,5 кг и 12 кг
+                <h5 class="catalog__name">GRAND PRIX Medium Adult LAMB Ягненок и Рис корм для собак средних пород
+                </h5>
+                <p class="catalog__size">В налиичии упаковки 2,5кг и 12кг
+                </p><a class="catalog__more popup-with-move-anim" href="#dog11"> Подробнее</a>
+                <div class="catalog__description zoom-anim-dialog mfp-hide" id="dog11">Корм премиум класса MEDIUM JUNIOR — комплексное сухое питание для щенков средних пород. MEDIUM ADULT — сбалансированный рацион для взрослых собак весом от 11 до 25 кг. Содержит оптимальное количество витаминов, минералов и питательных элементов для здоровья и правильного развития ваших питомцев.
                 </div><a class="catalog__btn btn popup-with-form" href="#popup-price">Узнать цену</a>
               </div>
               <div class="catalog__item">
                 <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-dog-12.png" alt="team-dog-12" width="75px" title=""/>
                 </div>
-                <h5 class="catalog__name">GRAND PRIX MEDIUM ADULT LAMB ЯГНЕНОК И РИС корм для собак средних пород
-                </h5><a class="catalog__more popup-with-move-anim" href="#dog12"> Подробнее</a>
-                <div class="catalog__description zoom-anim-dialog mfp-hide" id="dog12">в наличии упаковки 2,5 кг и 12 кг
+                <h5 class="catalog__name">GRAND PRIX Medium Junior LAMB Ягненок и Рис корм для щенков собак средних пород
+                </h5>
+                <p class="catalog__size">В налиичии упаковки 2,5кг и 12кг
+                </p><a class="catalog__more popup-with-move-anim" href="#dog12"> Подробнее</a>
+                <div class="catalog__description zoom-anim-dialog mfp-hide" id="dog12">Корм премиум класса MEDIUM JUNIOR — комплексное сухое питание для щенков средних пород. MEDIUM ADULT — сбалансированный рацион для взрослых собак весом от 11 до 25 кг. Содержит оптимальное количество витаминов, минералов и питательных элементов для здоровья и правильного развития ваших питомцев.
                 </div><a class="catalog__btn btn popup-with-form" href="#popup-price">Узнать цену</a>
               </div>
               <div class="catalog__item">
                 <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-dog-13.png" alt="team-dog-13" width="75px" title=""/>
                 </div>
-                <h5 class="catalog__name">GRAND PRIX MEDIUM JUNIOR LAMB ЯГНЕНОК И РИС корм для щенков собак средних пород
-                </h5><a class="catalog__more popup-with-move-anim" href="#dog13"> Подробнее</a>
-                <div class="catalog__description zoom-anim-dialog mfp-hide" id="dog13">в наличии упаковки 2,5 кг и 12 кг
+                <h5 class="catalog__name">Grand Prix Large Junior корм для щенков собак крупных пород
+                </h5>
+                <p class="catalog__size">В налиичии упаковки 2,5кг и 12кг
+                </p><a class="catalog__more popup-with-move-anim" href="#dog13"> Подробнее</a>
+                <div class="catalog__description zoom-anim-dialog mfp-hide" id="dog13">Корм премиум класса MEDIUM JUNIOR — комплексное сухое питание для щенков средних пород. MEDIUM ADULT — сбалансированный рацион для взрослых собак весом от 11 до 25 кг. Содержит оптимальное количество витаминов, минералов и питательных элементов для здоровья и правильного развития ваших питомцев.
+                </div><a class="catalog__btn btn popup-with-form" href="#popup-price">Узнать цену</a>
+              </div>
+              <div class="catalog__item">
+                <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-dog-14.png" alt="team-dog-14" width="75px" title=""/>
+                </div>
+                <h5 class="catalog__name">Grand Prix Large Adult корм для собак крупных пород 
+                </h5>
+                <p class="catalog__size">В налиичии упаковки 2,5кг и 12кг
+                </p><a class="catalog__more popup-with-move-anim" href="#dog14"> Подробнее</a>
+                <div class="catalog__description zoom-anim-dialog mfp-hide" id="dog14">Корм премиум класса MEDIUM JUNIOR — комплексное сухое питание для щенков средних пород. MEDIUM ADULT — сбалансированный рацион для взрослых собак весом от 11 до 25 кг. Содержит оптимальное количество витаминов, минералов и питательных элементов для здоровья и правильного развития ваших питомцев.
+                </div><a class="catalog__btn btn popup-with-form" href="#popup-price">Узнать цену</a>
+              </div>
+              <div class="catalog__item">
+                <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-dog-15.png" alt="team-dog-15" width="75px" title=""/>
+                </div>
+                <h5 class="catalog__name">Grand Prix Large Adult LAMB Ягненок и Рис корм для собак крупных пород
+                </h5>
+                <p class="catalog__size">В налиичии упаковки 2,5кг и 12кг
+                </p><a class="catalog__more popup-with-move-anim" href="#dog15"> Подробнее</a>
+                <div class="catalog__description zoom-anim-dialog mfp-hide" id="dog15">Корм премиум класса MEDIUM JUNIOR — комплексное сухое питание для щенков средних пород. MEDIUM ADULT — сбалансированный рацион для взрослых собак весом от 11 до 25 кг. Содержит оптимальное количество витаминов, минералов и питательных элементов для здоровья и правильного развития ваших питомцев.
+                </div><a class="catalog__btn btn popup-with-form" href="#popup-price">Узнать цену</a>
+              </div>
+              <div class="catalog__item">
+                <div class="catalog__img-wrapper"><img class="catalog__img" src="img/production/prod-dog-16.png" alt="team-dog-16" width="75px" title=""/>
+                </div>
+                <h5 class="catalog__name">Grand Prix Large Junior LAMB Ягненок и Рис корм для щенков собак крупных пород
+                </h5>
+                <p class="catalog__size">В налиичии упаковки 2,5кг и 12кг
+                </p><a class="catalog__more popup-with-move-anim" href="#dog16"> Подробнее</a>
+                <div class="catalog__description zoom-anim-dialog mfp-hide" id="dog16">Корм премиум класса MEDIUM JUNIOR — комплексное сухое питание для щенков средних пород. MEDIUM ADULT — сбалансированный рацион для взрослых собак весом от 11 до 25 кг. Содержит оптимальное количество витаминов, минералов и питательных элементов для здоровья и правильного развития ваших питомцев.
                 </div><a class="catalog__btn btn popup-with-form" href="#popup-price">Узнать цену</a>
               </div>
             </div>
@@ -528,7 +563,7 @@
             <div class="reviews__item-top">
               <div class="reviews__avatar-wrapper"><img class="reviews__avatar" src="img/userAvatars/man-1.jpg" alt="reviews-man-1.jpg" title=""/>
               </div>
-              <div class="reviews__name">Иван Станиславович
+              <div class="reviews__name">Иван
               </div>
               <div class="reviews__post">Кошатник
               </div>

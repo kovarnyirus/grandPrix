@@ -1,5 +1,6 @@
 .catalog {
   margin-bottom: 117px;
+
   &__title {
     line-height: 25px;
     width: 80%;
@@ -8,7 +9,7 @@
     margin-bottom: 39px;
   }
 
-  &__head-list{
+  &__head-list {
     max-width: 246px;
     margin-left: auto;
     margin-right: auto;
@@ -17,7 +18,7 @@
     margin-bottom: 75px;
   }
 
-  &__head-item{
+  &__head-item {
     font-family: AGAvalancheC;
     font-style: normal;
     font-weight: bold;
@@ -26,17 +27,19 @@
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
-    &:hover{
+
+    &:hover {
       color: $accent-color;
     }
-    &.active{
+
+    &.active {
       color: $accent-color;
       padding-bottom: 4px;
       border-bottom: 2px solid $accent-color;
     }
   }
 
-  &__body-item{
+  &__body-item {
     transition: .2s;
     transform: translateX(-100%);
     opacity: 0;
@@ -44,7 +47,8 @@
     position: absolute;
     height: 0;
     overflow: hidden;
-    &.active{
+
+    &.active {
       height: auto;
       opacity: 1;
       visibility: visible;
@@ -70,6 +74,9 @@
     padding-right: 12px;
     padding-bottom: 12px;
     text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
   }
 
   &__img-wrapper {
@@ -90,6 +97,13 @@
     color: #000000;
     margin-bottom: 9px;
     text-align: left;
+    flex-grow: 1;
+
+  }
+
+  &__size{
+    color: black;
+    margin-bottom: 20px;
   }
 
   &__more {
@@ -106,7 +120,8 @@
     padding-bottom: 3px;
     border-bottom: 1px solid $link-color;
     margin-bottom: 10px;
-    &:hover{
+
+    &:hover {
       text-decoration: none;
     }
   }
@@ -119,7 +134,8 @@
     min-height: 37px;
     margin-top: 10px;
   }
-  &__description{
+
+  &__description {
     position: relative;
     max-width: 500px;
     background-color: white;
@@ -134,38 +150,39 @@
     font-size: 16px;
     line-height: 1.5;
   }
-  @include media-breakpoint-up(md){
-    &__item{
+
+  @include media-breakpoint-up(md) {
+    &__item {
       width: 32%;
     }
-    &__name{
+    &__name {
       margin-bottom: 20px;
       font-size: 12px;
       line-height: 1.5;
     }
-    &__btn{
+    &__btn {
       font-size: 12px;
     }
   }
-  @include media-breakpoint-up(xl){
+  @include media-breakpoint-up(xl) {
     margin-bottom: 60px;
-    &__title{
+    &__title {
       line-height: 62px;
       margin-bottom: 97px;
     }
-    &__head-list{
+    &__head-list {
       max-width: 426px;
       justify-content: space-around;
     }
-    &__head-item{
+    &__head-item {
       font-size: 24px;
       line-height: 30px;
     }
-    &__list{
+    &__list {
       padding-left: 0;
       padding-right: 0;
     }
-    &__item{
+    &__item {
       width: 387px;
       padding-top: 34px;
       padding-left: 33px;
@@ -173,24 +190,23 @@
       padding-bottom: 42px;
       margin-bottom: 22px;
     }
-    &__img{
+    &__img {
       width: 230px;
     }
-    &__img-wrapper{
+    &__img-wrapper {
       margin-bottom: 8px;
     }
-    &__name{
-      font-size: 18px;
+    &__name {
+      font-size: 16px;
       line-height: 160%;
-      margin-bottom: 65px;
-      min-height: 88px;
+      margin-bottom: 40px;
     }
-    &__more{
+    &__more {
       font-size: 16px;
       line-height: 146%;
       margin-bottom: 23px;
     }
-    &__btn{
+    &__btn {
       margin-top: 23px;
       font-size: 16px;
       line-height: 146%;

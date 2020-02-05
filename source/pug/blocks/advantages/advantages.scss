@@ -67,13 +67,16 @@
       position: absolute;
       display: block;
       content: '';
-      width: 1160px;
-      height: 1124px;
+      width: 661px;
+      height: 791px;
       background-image: url("../img/dog.png");
-      right: 49.5%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      right: 50%;
       top: 50%;
-      transform: translate(-42%, -18%);
+      transform: translate(-78%, -3%);
       z-index: -1;
+
     }
     &:after {
       position: absolute;
@@ -97,6 +100,7 @@
     &__item {
       width: 590px;
       margin-bottom: 133px;
+      padding-right: 20px;
     }
     &__item-number {
       font-size: 100px;
