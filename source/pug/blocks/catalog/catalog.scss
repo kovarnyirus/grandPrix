@@ -104,6 +104,7 @@
   &__size{
     color: black;
     margin-bottom: 20px;
+    font-size: 10px;
   }
 
   &__more {
@@ -160,6 +161,9 @@
       font-size: 12px;
       line-height: 1.5;
     }
+    &__size{
+      font-size: 12px;
+    }
     &__btn {
       font-size: 12px;
     }
@@ -200,6 +204,9 @@
       font-size: 16px;
       line-height: 160%;
       margin-bottom: 40px;
+    }
+    &__size{
+      font-size: 16px;
     }
     &__more {
       font-size: 16px;

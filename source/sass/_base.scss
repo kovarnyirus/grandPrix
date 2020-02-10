@@ -87,7 +87,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 66px;
+  height: 38px;
   border-radius: 12px;
   font-family: AGAvalancheC;
   font-style: normal;
@@ -236,6 +236,7 @@ a {
     font-family: AGAvalancheC;
     width: 100%;
     margin-bottom: 30px;
+    height: 68px;
   }
 
   &__agreement {
@@ -273,6 +274,7 @@ a {
     &__btn {
       width: 30%;
       margin: 0;
+      height: 52px;
     }
     &__agreement {
       margin-top: 35px;
